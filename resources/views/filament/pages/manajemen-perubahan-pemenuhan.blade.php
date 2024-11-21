@@ -3,14 +3,20 @@
         <!-- Title -->
         <h1 class="text-2xl font-bold">1. Manajemen Perubahan - Pemenuhan</h1>
 
-        <!-- Dropdown -->
-        <label for="section-select" class="block text-sm font-medium text-gray-700">Select Section</label>
-        <select id="section-select" class="block w-full mt-2 p-2 border border-gray-300 rounded-md" onchange="showSection(this.value)">
-            <option value="penyusunan-tim-kerja">i. Penyusunan Tim Kerja</option>
-            <option value="rencana-pembangunan-zi">ii. Rencana Pembangunan Zona Integritas</option>
-            <option value="pemantauan-evaluasi">iii. Pemantauan dan Evaluasi Pembangunan WBK/WBBM</option>
-            <option value="perubahan-budaya-kerja">iv. Perubahan Pola Pikir dan Budaya Kerja</option>
-        </select>
+    <!-- Dropdown -->
+    <label for="section-select" class="block text-sm font-medium text-gray-900 dark:text-white">Select Section</label>
+    <select id="section-select" 
+            class="block w-full mt-2 p-2 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-md shadow-sm" 
+            onchange="showSection(this.value)">
+        <option value="penyusunan-tim-kerja">i. Penyusunan Tim Kerja</option>
+        <option value="rencana-pembangunan-zi">ii. Rencana Pembangunan Zona Integritas</option>
+        <option value="pemantauan-evaluasi">iii. Pemantauan dan Evaluasi Pembangunan WBK/WBBM</option>
+        <option value="perubahan-budaya-kerja">iv. Perubahan Pola Pikir dan Budaya Kerja</option>
+    </select>
+
+
+        
+
 
         <!-- Sections -->
         <div id="penyusunan-tim-kerja" class="section hidden">

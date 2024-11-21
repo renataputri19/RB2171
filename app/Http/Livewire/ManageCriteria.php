@@ -24,15 +24,38 @@ class ManageCriteria extends Component
     {
         $criterion = Criterion::find($id);
     
-        if ($criterion && array_key_exists($field, $criterion->getAttributes())) {
-            $criterion->$field = $value; // Dynamically assign the field value
+        if ($criterion) {
+            $criterion->$field = $value;
+    
+            // Update nilai_unit or nilai_tpi based on the input
+            if ($field === 'jawaban_unit') {
+                $criterion->nilai_unit = $this->calculateScore($value, $criterion->pilihan_jawaban);
+            } elseif ($field === 'jawaban_tpi') {
+                $criterion->nilai_tpi = $this->calculateScore($value, $criterion->pilihan_jawaban);
+            }
+    
             $criterion->save();
     
             session()->flash('message', 'Row updated successfully!');
-        } else {
-            session()->flash('message', 'Invalid field or ID!');
         }
     }
+    
+    // Helper method to calculate score
+    private function calculateScore($answer, $options)
+    {
+        if ($options === 'Ya/Tidak') {
+            return strtolower($answer) === 'ya' ? 1 : 0;
+        } elseif ($options === 'A/B/C') {
+            return match (strtoupper($answer)) {
+                'A' => 1,
+                'B' => 0.5,
+                default => 0,
+            };
+        }
+    
+        return 0; // Default if no valid options are provided
+    }
+    
     
     
     
