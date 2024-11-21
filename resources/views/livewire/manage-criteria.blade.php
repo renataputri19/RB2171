@@ -1,10 +1,10 @@
 <div>
     <!-- Flash Message -->
-    @if (session()->has('message'))
+    {{-- @if (session()->has('message'))
         <div class="bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 text-center py-2 mb-4 rounded shadow-md">
             {{ session('message') }}
         </div>
-    @endif
+    @endif --}}
 
 
 
@@ -12,8 +12,17 @@
         @foreach ($criteria as $criterion)
             <div class="p-4 border rounded-lg bg-gray-100 dark:bg-gray-800">
                 <h4 class="font-bold mb-4 text-gray-800 dark:text-gray-200">
-                    {{ $criterion['kriteria_nilai'] }}
+                    {{ $criterion['penilaian'] }}
                 </h4>
+
+                <!-- Kriteria Nilai -->
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-800 dark:text-gray-200">Kriteria Nilai</label>
+                    <p class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-200">
+                        {{ $criterion['kriteria_nilai'] }}
+                    </p>
+                </div>
+
     
                 <!-- Pilihan Jawaban -->
                 <div class="mb-4">

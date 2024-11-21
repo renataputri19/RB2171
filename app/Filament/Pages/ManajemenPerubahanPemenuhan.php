@@ -23,7 +23,7 @@ class ManajemenPerubahanPemenuhan extends Page
     public function mount()
     {
         // Fetch data from the `criteria` table and assign it to the public property
-        $this->criteria = Criterion::where('category', 'Manajemen Perubahan - Pemenuhan')->get();
+        $this->criteria = Criterion::all();
     }
 
     protected static string $view = 'filament.pages.manajemen-perubahan-pemenuhan';

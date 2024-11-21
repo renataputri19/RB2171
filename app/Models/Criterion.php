@@ -10,6 +10,7 @@ class Criterion extends Model
     use HasFactory;
 
     protected $fillable = [
+        'penilaian',
         'kriteria_nilai',
         'pilihan_jawaban',
         'jawaban_unit',
@@ -20,5 +21,6 @@ class Criterion extends Model
         'jawaban_tpi',
         'nilai_tpi',
         'catatan_reviu_tpi',
+        'category',
     ];
 }
