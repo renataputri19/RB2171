@@ -14,7 +14,7 @@ class PenguatanAkuntabilitasReform extends Page
     // Correctly override the getTitle method
     public function getTitle(): string
     {
-        return 'Penguatan Akuntabilitas';
+        return 'Penguatan Akuntabilitas - REFORM';
     }
 
     protected static string $view = 'filament.pages.penguatan-akuntabilitas-reform';

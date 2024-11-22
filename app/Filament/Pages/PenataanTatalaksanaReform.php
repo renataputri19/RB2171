@@ -14,7 +14,7 @@ class PenataanTatalaksanaReform extends Page
     // Correctly override the getTitle method
     public function getTitle(): string
     {
-        return 'Penataan Tatalaksana';
+        return 'Penataan Tatalaksana - REFORM';
     }
 
     protected static string $view = 'filament.pages.penataan-tatalaksana-reform';

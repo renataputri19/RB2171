@@ -14,7 +14,7 @@ class ManajemenPerubahanReform extends Page
     // Correctly override the getTitle method
     public function getTitle(): string
     {
-        return 'Manajemen Perubahan';
+        return 'Manajemen Perubahan - REFORM';
     }
 
     protected static string $view = 'filament.pages.manajemen-perubahan-reform';

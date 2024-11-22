@@ -15,7 +15,7 @@ class ManajemenPerubahanPemenuhan extends Page
     // Correctly override the getTitle method
     public function getTitle(): string
     {
-        return 'Manajemen Perubahan';
+        return 'Manajemen Perubahan - PEMENUHAN';
     }
 
     public $criteria; // Define a public property to hold the data

@@ -14,7 +14,7 @@ class PeningkatanKualitasPelayananReform extends Page
     // Correctly override the getTitle method
     public function getTitle(): string
     {
-        return 'Peningkatan Kualitas Pelayanan Publik';
+        return 'Peningkatan Kualitas Pelayanan Publik - REFORM';
     }
 
     protected static string $view = 'filament.pages.peningkatan-kualitas-pelayanan-reform';

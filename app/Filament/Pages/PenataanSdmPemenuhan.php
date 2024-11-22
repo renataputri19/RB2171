@@ -14,7 +14,7 @@ class PenataanSdmPemenuhan extends Page
     // Correctly override the getTitle method
     public function getTitle(): string
     {
-        return 'Penataan Sistem Manajemen SDM Aparatur';
+        return 'Penataan Sistem Manajemen SDM Aparatur - PEMENUHAN';
     }
 
     protected static string $view = 'filament.pages.penataan-sdm-pemenuhan';

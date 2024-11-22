@@ -14,7 +14,7 @@ class PenguatanPengawasanPemenuhan extends Page
     // Correctly override the getTitle method
     public function getTitle(): string
     {
-        return 'Penguatan Pengawasan';
+        return 'Penguatan Pengawasan - PEMENUHAN';
     }
 
     protected static string $view = 'filament.pages.penguatan-pengawasan-pemenuhan';
