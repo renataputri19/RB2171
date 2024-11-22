@@ -1,12 +1,4 @@
 <div>
-    <!-- Flash Message -->
-    {{-- @if (session()->has('message'))
-        <div class="bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 text-center py-2 mb-4 rounded shadow-md">
-            {{ session('message') }}
-        </div>
-    @endif --}}
-
-
 
     <div class="space-y-6">
         @foreach ($criteria as $criterion)

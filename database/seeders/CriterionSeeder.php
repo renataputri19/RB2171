@@ -812,6 +812,48 @@ c. Belum dilakukan perbaikan ',
             ],
 
 
+            // REFORM
+
+            // MANAJEMEN PERUBAHAN
+
+            // i. Komitmen dalam perubahan
+
+            [
+                'penilaian' => 'Agen perubahan telah membuat perubahan yang konkret di Instansi (dalam 1 tahun)',
+                'kriteria_nilai' => 'Misalkan dengan kebijakan 1 Agen 1 Perubahan. Persentase diperoleh dari Jumlah Perubahan yang dibuat dibagi dengan Jumlah Agen Perubahan.',
+                'pilihan_jawaban' => '%',
+                'category' => 'Komitmen dalam Perubahan',
+            ],
+            [
+                'penilaian' => '- Jumlah Agen Perubahan',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Komitmen dalam Perubahan',
+            ],
+            [
+                'penilaian' => '- Jumlah Perubahan yang dibuat',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Komitmen dalam Perubahan',
+            ],
+            [
+                'penilaian' => 'Perubahan yang dibuat Agen Perubahan telah terintegrasi dalam sistem manajemen',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => '%',
+                'category' => 'Komitmen dalam Perubahan',
+            ],
+            [
+                'penilaian' => '- Jumlah Perubahan yang dibuat',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Komitmen dalam Perubahan',
+            ],
+            [
+                'penilaian' => '- Jumlah Perubahan yang telah diintegrasikan dalam sistem manajemen',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Komitmen dalam Perubahan',
+            ],
 
 
 
