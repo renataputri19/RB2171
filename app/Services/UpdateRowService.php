@@ -12,8 +12,10 @@ class UpdateRowService
         $criterion = Criterion::find($id);
 
         if ($criterion) {
-            // Cast the value to float for calculations
-            $criterion->$field = is_numeric($value) ? (float) $value : null;
+            // Handle both numeric and categorical fields dynamically
+            $criterion->$field = is_numeric($value) && !in_array($criterion->pilihan_jawaban, ['Ya/Tidak', 'A/B/C', 'A/B/C/D', 'A/B/C/D/E'])
+                ? (float) $value
+                : $value;
 
             // Save the new value immediately to ensure calculations use the latest data
             $criterion->save();
@@ -38,7 +40,7 @@ class UpdateRowService
                             $criterion->nilai_tpi = $criterion->jawaban_tpi > 1 ? 1 : $criterion->jawaban_tpi; // Cap at 1
                         }
                     } else {
-                        // Handle regular scoring
+                        // Handle regular scoring using ScoringService
                         $criterion->{'nilai_' . ($field === 'jawaban_unit' ? 'unit' : 'tpi')} =
                             ScoringService::calculateScore($value, $criterion->pilihan_jawaban);
                     }
@@ -82,7 +84,7 @@ class UpdateRowService
 
     private static function automatePercentageJawaban($criterion)
     {
-        if ($criterion->penilaian === 'Agen perubahan telah membuat perubahan yang konkret di Instansi (dalam 1 tahun)') {
+        if ($criterion->penilaian === 'a. Agen perubahan telah membuat perubahan yang konkret di Instansi (dalam 1 tahun)') {
             // Fetch related values
             $jumlahAgenUnit = (float) Criterion::where('category', $criterion->category)
                 ->where('penilaian', '- Jumlah Agen Perubahan')
@@ -112,10 +114,10 @@ class UpdateRowService
             ];
         }
 
-        if ($criterion->penilaian === 'Perubahan yang dibuat Agen Perubahan telah terintegrasi dalam sistem manajemen') {
+        if ($criterion->penilaian === 'b. Perubahan yang dibuat Agen Perubahan telah terintegrasi dalam sistem manajemen') {
             // Fetch related values
             $jumlahPerubahanUnit = (float) Criterion::where('category', $criterion->category)
-                ->where('penilaian', '- Jumlah Perubahan yang dibuat')
+                ->where('penilaian', '- Jumlah Perubahan yang dibuat Agen Perubahan')
                 ->value('jawaban_unit') ?? 0;
 
             $integratedChangesUnit = (float) Criterion::where('category', $criterion->category)
@@ -123,7 +125,7 @@ class UpdateRowService
                 ->value('jawaban_unit') ?? 0;
 
             $jumlahPerubahanTpi = (float) Criterion::where('category', $criterion->category)
-                ->where('penilaian', '- Jumlah Perubahan yang dibuat')
+                ->where('penilaian', '- Jumlah Perubahan yang dibuat Agen Perubahan')
                 ->value('jawaban_tpi') ?? 0;
 
             $integratedChangesTpi = (float) Criterion::where('category', $criterion->category)
@@ -141,6 +143,64 @@ class UpdateRowService
                 'jawaban_tpi' => $jawabanTpi,
             ];
         }
+        
+
+        // Pelanggaran Disiplin Pegawai
+        if ($criterion->penilaian === 'a. Penurunan pelanggaran disiplin pegawai') {
+            // Fetch related values for Unit
+            $pelanggaranSebelumnyaUnit = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah pelanggaran tahun sebelumnya')
+                ->value('jawaban_unit') ?? 0;
+
+            $pelanggaranTahunIniUnit = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah pelanggaran tahun ini')
+                ->value('jawaban_unit') ?? 0;
+
+            // Fetch related values for TPI
+            $pelanggaranSebelumnyaTpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah pelanggaran tahun sebelumnya')
+                ->value('jawaban_tpi') ?? 0;
+
+            $pelanggaranTahunIniTpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah pelanggaran tahun ini')
+                ->value('jawaban_tpi') ?? 0;
+
+            // Initialize the result
+            $result = [
+                'jawaban_unit' => null,
+                'jawaban_tpi' => null,
+            ];
+
+            // Calculate jawaban_unit if related Unit values are present
+            if ($pelanggaranSebelumnyaUnit !== null && $pelanggaranTahunIniUnit !== null) {
+                if ($pelanggaranSebelumnyaUnit == 0 && $pelanggaranTahunIniUnit == 0) {
+                    $result['jawaban_unit'] = 1; // 100% if no violations in both years
+                } else {
+                    $percentageReductionUnit = ($pelanggaranSebelumnyaUnit > 0)
+                        ? max(0, min(1, ($pelanggaranSebelumnyaUnit - $pelanggaranTahunIniUnit) / $pelanggaranSebelumnyaUnit))
+                        : 0;
+                    $result['jawaban_unit'] = round($percentageReductionUnit, 2);
+                }
+            }
+
+            // Calculate jawaban_tpi if related TPI values are present
+            if ($pelanggaranSebelumnyaTpi !== null && $pelanggaranTahunIniTpi !== null) {
+                if ($pelanggaranSebelumnyaTpi == 0 && $pelanggaranTahunIniTpi == 0) {
+                    $result['jawaban_tpi'] = 1; // 100% if no violations in both years
+                } else {
+                    $percentageReductionTpi = ($pelanggaranSebelumnyaTpi > 0)
+                        ? max(0, min(1, ($pelanggaranSebelumnyaTpi - $pelanggaranTahunIniTpi) / $pelanggaranSebelumnyaTpi))
+                        : 0;
+                    $result['jawaban_tpi'] = round($percentageReductionTpi, 2);
+                }
+            }
+
+            return $result;
+        }
+
+
+
+
 
         return [
             'jawaban_unit' => null, // Default null for unsupported cases

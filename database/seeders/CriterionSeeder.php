@@ -819,7 +819,7 @@ c. Belum dilakukan perbaikan ',
             // i. Komitmen dalam perubahan
 
             [
-                'penilaian' => 'Agen perubahan telah membuat perubahan yang konkret di Instansi (dalam 1 tahun)',
+                'penilaian' => 'a. Agen perubahan telah membuat perubahan yang konkret di Instansi (dalam 1 tahun)',
                 'kriteria_nilai' => 'Misalkan dengan kebijakan 1 Agen 1 Perubahan. Persentase diperoleh dari Jumlah Perubahan yang dibuat dibagi dengan Jumlah Agen Perubahan.',
                 'pilihan_jawaban' => '%',
                 'category' => 'Komitmen dalam Perubahan',
@@ -837,13 +837,13 @@ c. Belum dilakukan perbaikan ',
                 'category' => 'Komitmen dalam Perubahan',
             ],
             [
-                'penilaian' => 'Perubahan yang dibuat Agen Perubahan telah terintegrasi dalam sistem manajemen',
+                'penilaian' => 'b. Perubahan yang dibuat Agen Perubahan telah terintegrasi dalam sistem manajemen',
                 'kriteria_nilai' => '',
                 'pilihan_jawaban' => '%',
                 'category' => 'Komitmen dalam Perubahan',
             ],
             [
-                'penilaian' => '- Jumlah Perubahan yang dibuat',
+                'penilaian' => '- Jumlah Perubahan yang dibuat Agen Perubahan',
                 'kriteria_nilai' => '',
                 'pilihan_jawaban' => 'Jumlah',
                 'category' => 'Komitmen dalam Perubahan',
@@ -854,6 +854,169 @@ c. Belum dilakukan perbaikan ',
                 'pilihan_jawaban' => 'Jumlah',
                 'category' => 'Komitmen dalam Perubahan',
             ],
+
+            
+            // ii. Komitmen Pimpinan
+
+            [
+                'penilaian' => 'a. Pimpinan memiliki komitmen terhadap pelaksanaan reformasi birokrasi, dengan adanya target capaian reformasi yang jelas di dokumen perencanaan',
+                'kriteria_nilai' => 'a. Target capaian zona integritas sudah ada di dokumen perencanaan unit kerja dan sebagian besar (diatas 80%) sudah tercapai
+b. Target capaian zona integritas sudah ada di dokumen perencanaan unit kerja dan sebagian (diatas 50%) sudah tercapai
+c. Target capaian zona integritas sudah ada di dokumen perencanaan unit kerja dan sebagian kecil (dibawah 50%) sudah tercapai
+d. Target capaian zona integritassudah ada di dokumen perencanaan unit kerja, namun belum ada yang tercapai (masih dalam tahap pembangunan)
+e. Tidak ada target capaian zona integritasdi dokumen perencanaan unit kerja',
+                'pilihan_jawaban' => 'A/B/C/D/E',
+                'category' => 'Komitmen Pimpinan',
+            ],
+
+
+
+            // iii. Membangun Budaya Kerja
+
+            [
+                'penilaian' => 'a. Instansi membangun budaya kerja positif dan menerapkan nilai-nilai organisasi dalam pelaksanaan tugas sehari-hari',
+                'kriteria_nilai' => 'a. Budaya kerja dan nilai-nilai organisasi telah dinternalisasi ke seluruh anggota organisasi, dan penerapannya dituangkan dalam standar operasional pelaksanaan kegiatan/tugas 
+b. Budaya kerja dan nilai-nilai organisasi telah dinternalisasi ke seluruh anggota organisasi, namun belum dituangkan dalam standar operasional pelaksanaan kegiatan/tugas
+c. Budaya kerja dan nilai-nilai organisasi telah disusun, namun belum dinternalisasi ke seluruh anggota organisasi
+d. Belum menyusun budaya kerja dan nilai-nilai organisasi',
+                'pilihan_jawaban' => 'A/B/C/D',
+                'category' => 'Membangun Budaya Kerja',
+            ],
+
+
+            // PENATAAN TATALAKSANA
+
+            // i. Peta Proses Bisnis Mempengaruhi Penyederhanaan Jabatan
+
+
+            [
+                'penilaian' => 'a. Telah disusun peta proses bisnis dengan adanya penyederhanaan jabatan',
+                'kriteria_nilai' => 'a. Peta proses bisnis telah disusun dan mempengaruhi penyederhanaan seluruh jabatan
+b. Peta proses bisnis telah disusun dan mempengaruhi penyederhanaan sebagian besar (lebih dari 50%) jabatan
+c. Peta proses bisnis telah disusun dan mempengaruhi penyederhanaan sebagian kecil (kurang dari 50%)  jabatan
+d. Peta proses bisnis telah disusun dan belum mempengaruhi penyederhanaan jabatan',
+                'pilihan_jawaban' => 'A/B/C/D',
+                'category' => 'Peta Proses Bisnis Mempengaruhi Penyederhanaan Jabatan',
+            ],
+
+
+
+            // ii. Sistem Pemerintahan Berbasis Elektronik (SPBE) yang Terintegrasi
+
+            [
+                'penilaian' => 'a. Implementasi SPBE telah terintegrasi dan mampu mendorong pelaksanaan pelayanan publik yang lebih cepat dan efisien',
+                'kriteria_nilai' => 'a. Implementasi SPBE telah terintegrasi dan mampu mendorong pelaksanaan pelayanan publik yang lebih cepat dan efisien 
+b. Implementasi SPBE telah mampu mendorong pelaksanaan pelayanan publik yang lebih cepat dan efisien, namun belum terintegrasi (parsial)
+c. Implementasi SPBE belum mendorong pelaksanaan pelayanan publik yang lebih cepat dan efisien',
+                'pilihan_jawaban' => 'A/B/C',
+                'category' => 'Sistem Pemerintahan Berbasis Elektronik (SPBE) yang Terintegrasi',
+            ],
+            [
+                'penilaian' => 'b. Implementasi SPBE telah terintegrasi dan mampu mendorong pelaksanaan pelayanan internal organisasi yang lebih cepat dan efisien',
+                'kriteria_nilai' => 'a. Implementasi SPBE telah terintegrasi dan mampu mendorong pelaksanaan pelayanan internal unit kerja yang lebih cepat dan efisien 
+b. Implementasi SPBE telah mampu mendorong pelaksanaan pelayanan internal unit kerja yang lebih cepat dan efisien, namun belum terintegrasi (parsial)
+c. Implementasi SPBE belum mendorong pelaksanaan pelayanan internal unit kerja yang lebih cepat dan efisien',
+                'pilihan_jawaban' => 'A/B/C',
+                'category' => 'Sistem Pemerintahan Berbasis Elektronik (SPBE) yang Terintegrasi',
+            ],
+
+
+            // iii. Transformasi Digital Memberikan Nilai Manfaat
+            
+            [
+                'penilaian' => 'a.	Transformasi digital pada bidang proses bisnis utama telah mampu memberikan nilai manfaat bagi unit kerja secara optimal',
+                'kriteria_nilai' => 'a. Kriteria huruf b telah terpenuhi dan penerapan atau penggunaan dari manfaat/dampak dari transformasi digital pada bidang proses bisnis utama bagi unit kerja telah dilakukan validasi dan evaluasi serta ditindaklanjuti secara berkelanjutan
+b. Kriteria huruf c telah terpenuhi dan manfaat/dampak dari transformasi digital pada bidang proses bisnis utama telah diterapkan/digunakan oleh unit kerja sesuai dengan sasaran dan target manfaat/dampak
+c. Kriteria huruf d telah terpenuhi dan manfaat/dampak dari transformasi digital pada bidang proses bisnis utama telah mampu direalisasikan pada unit kerja sesuai dengan sasaran dan target manfaat/dampak
+d. Kriteria huruf e telah terpenuhi dan kapabilitas prakiraan dan pelacakan terhadap sasaran dan target manfaat/dampak dari transformasi digital pada bidang proses bisnis utama
+e. Sasaran dan target manfaat/dampak dari transformasi digital pada bidang proses bisnis utama telah direncanakan, didefinisikan, dan ditetapkan',
+                'pilihan_jawaban' => 'A/B/C/D/E',
+                'category' => 'Transformasi Digital Memberikan Nilai Manfaat',
+            ],
+
+            [
+                'penilaian' => 'b.	Transformasi digital pada bidang administrasi pemerintahan telah mampu memberikan nilai manfaat bagi unit kerja secara optimal',
+                'kriteria_nilai' => 'a. Kriteria huruf b telah terpenuhi dan penerapan atau penggunaan dari manfaat/dampak dari transformasi digital pada bidang administrasi pemerintahan bagi unit kerja telah dilakukan validasi dan evaluasi serta ditindaklanjuti secara berkelanjutan
+b. Kriteria huruf c telah terpenuhi dan manfaat/dampak dari transformasi digital pada bidang administrasi pemerintahan telah diterapkan/digunakan oleh unit kerja sesuai dengan sasaran dan target manfaat/dampak
+c. Kriteria huruf d telah terpenuhi dan manfaat/dampak dari transformasi digital pada bidang administrasi pemerintahan telah mampu direalisasikan pada unit kerja sesuai dengan sasaran dan target manfaat/dampak
+d. Kriteria huruf e telah terpenuhi dan kapabilitas prakiraan dan pelacakan terhadap sasaran dan target manfaat/dampak dari transformasi digital pada bidang administrasi pemerintahan
+e. Sasaran dan target manfaat/dampak dari transformasi digital pada bidang administrasi pemerintahan telah direncanakan, didefinisikan, dan ditetapkan',
+                'pilihan_jawaban' => 'A/B/C/D/E',
+                'category' => 'Transformasi Digital Memberikan Nilai Manfaat',
+            ],
+
+            [
+                'penilaian' => 'c.	Transformasi digital pada bidang pelayanan publik telah mampu memberikan nilai manfaat bagi unit kerja secara optimal',
+                'kriteria_nilai' => 'a. Kriteria huruf b telah terpenuhi dan penerapan atau penggunaan dari manfaat/dampak dari transformasi digital pada bidang pelayanan publik bagi unit kerja telah dilakukan validasi dan evaluasi serta ditindaklanjuti secara berkelanjutan
+b. Kriteria huruf c telah terpenuhi dan manfaat/dampak dari transformasi digital pada bidang pelayanan publik telah diterapkan/digunakan oleh unit kerja sesuai dengan sasaran dan target manfaat/dampak
+c. Kriteria huruf d telah terpenuhi dan manfaat/dampak dari transformasi digital pada bidang pelayanan publik telah mampu direalisasikan pada unit kerja sesuai dengan sasaran dan target manfaat/dampak
+d. Kriteria huruf e telah terpenuhi dan kapabilitas prakiraan dan pelacakan terhadap sasaran dan target manfaat/dampak dari transformasi digital pada bidang pelayanan publik
+e. Sasaran dan target manfaat/dampak dari transformasi digital pada bidang pelayanan publik telah direncanakan, didefinisikan, dan ditetapkan',
+                'pilihan_jawaban' => 'A/B/C/D/E',
+                'category' => 'Transformasi Digital Memberikan Nilai Manfaat',
+            ],
+            
+
+            // PENATAAN SISTEM MANAJEMEN SDM APARATUR
+
+            // i. Kinerja Individu
+
+
+            [
+                'penilaian' => 'a. Ukuran kinerja individu telah berorientasi hasil (outcome) sesuai pada levelnya',
+                'kriteria_nilai' => 'a. Seluruh ukuran kinerja individu telah berorientasi hasil (outcome) sesuai pada levelnya
+b. Sebagian ukuran kinerja individu telah berorientasi hasil (outcome) sesuai pada levelnya
+c. Tidak ada ukuran kinerja individu yang berorientasi hasil (outcome)',
+                'pilihan_jawaban' => 'A/B/C',
+                'category' => 'Kinerja Individu',
+            ],
+
+
+            // ii. Assessment Pegawai
+            
+            [
+                'penilaian' => 'a. Hasil assement telah dijadikan pertimbangan untuk mutasi dan pengembangan karir pegawai',
+                'kriteria_nilai' => 'a. Seluruh hasil assessment dijadikan dasar mutasi internal dan pengembangan kompetensi pegawai
+b. Hasil assessment belum seluruhnya dijadikan mutasi internal dan pengembangan kompetensi pegawai
+c. Hasil assessment belum dijadikan dasar mutasi internal dan pengembangan kompetensi pegawai',
+                'pilihan_jawaban' => 'A/B/C',
+                'category' => 'Assessment Pegawai',
+            ],
+
+            
+
+            // iii. Pelanggaran Disiplin Pegawai
+
+            [
+                'penilaian' => 'a. Penurunan pelanggaran disiplin pegawai',
+                'kriteria_nilai' => 'Persentase pernurunan pelanggaran disiplin pegawai diperoleh dari Jumlah pelanggaran tahun sebelumnya dikurangi Jumlah pelanggaran tahun ini kemudian dibagi dengan Jumlah pelanggaran tahun sebelumnya',
+                'pilihan_jawaban' => '%',
+                'category' => 'Pelanggaran Disiplin Pegawai',
+            ],
+            [
+                'penilaian' => '- Jumlah pelanggaran tahun sebelumnya',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Pelanggaran Disiplin Pegawai',
+            ],
+            [
+                'penilaian' => '- Jumlah pelanggaran tahun ini',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Pelanggaran Disiplin Pegawai',
+            ],
+            [
+                'penilaian' => '- Jumlah pelanggaran yang telah diberikan sanksi/hukuman',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Pelanggaran Disiplin Pegawai',
+            ],
+            
+
+
+
+
+
 
 
 

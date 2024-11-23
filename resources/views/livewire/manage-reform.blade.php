@@ -9,7 +9,7 @@
                 <!-- Pilihan Jawaban -->
                 <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-800 dark:text-gray-200">Pilihan Jawaban</label>
-                    <p class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-200">
+                    <p class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-200">
                         {{ $criterion['pilihan_jawaban'] }}
                     </p>
                 </div>
@@ -27,7 +27,7 @@
                         <div class="flex-1">
                             <label class="block text-sm font-medium text-gray-800 dark:text-gray-200">Nilai Unit</label>
                             <input type="text" value="{{ $criterion['nilai_unit'] }}"
-                                class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-200"
+                                class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-200"
                                 readonly>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
                         <div class="flex-1">
                             <label class="block text-sm font-medium text-gray-800 dark:text-gray-200">Nilai TPI</label>
                             <input type="text" value="{{ $criterion['nilai_tpi'] }}"
-                                class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-200"
+                                class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-200"
                                 readonly>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                     <!-- Kriteria Nilai -->
                     <div class="mb-4">
                         <label class="block text-sm font-medium text-gray-800 dark:text-gray-200">Kriteria Nilai</label>
-                        <p class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-200">
+                        <p class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-200">
                             {{ $criterion['kriteria_nilai'] }}
                         </p>
                     </div>
@@ -61,13 +61,14 @@
                         <div class="flex-1">
                             <label class="block text-sm font-medium text-gray-800 dark:text-gray-200">Jawaban Unit</label>
                             <input type="text" value="{{ $criterion['jawaban_unit'] }}"
-                                class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-200"
+                                class="@if ($criterion['pilihan_jawaban'] === '%') block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-200 readonly @else block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-200 @endif"
+                                @if ($criterion['pilihan_jawaban'] === '%') readonly @endif
                                 wire:change="updateRow({{ $criterion['id'] }}, 'jawaban_unit', $event.target.value)">
                         </div>
                         <div class="flex-1">
                             <label class="block text-sm font-medium text-gray-800 dark:text-gray-200">Nilai Unit</label>
                             <input type="text" value="{{ $criterion['nilai_unit'] }}"
-                                class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-200"
+                                class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-200"
                                 readonly>
                         </div>
                     </div>
@@ -103,13 +104,14 @@
                         <div class="flex-1">
                             <label class="block text-sm font-medium text-gray-800 dark:text-gray-200">Jawaban TPI</label>
                             <input type="text" value="{{ $criterion['jawaban_tpi'] }}"
-                                class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-200"
+                                class="@if ($criterion['pilihan_jawaban'] === '%') block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-200 readonly @else block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-200 @endif"
+                                @if ($criterion['pilihan_jawaban'] === '%') readonly @endif
                                 wire:change="updateRow({{ $criterion['id'] }}, 'jawaban_tpi', $event.target.value)">
                         </div>
                         <div class="flex-1">
                             <label class="block text-sm font-medium text-gray-800 dark:text-gray-200">Nilai TPI</label>
                             <input type="text" value="{{ $criterion['nilai_tpi'] }}"
-                                class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-200"
+                                class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-200"
                                 readonly>
                         </div>
                     </div>

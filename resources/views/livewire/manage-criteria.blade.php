@@ -10,7 +10,7 @@
                 <!-- Kriteria Nilai -->
                 <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-800 dark:text-gray-200">Kriteria Nilai</label>
-                    <p class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-200">
+                    <p class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-200">
                         {{ $criterion['kriteria_nilai'] }}
                     </p>
                 </div>
@@ -19,7 +19,7 @@
                 <!-- Pilihan Jawaban -->
                 <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-800 dark:text-gray-200">Pilihan Jawaban</label>
-                    <p class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-200">
+                    <p class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-200">
                         {{ $criterion['pilihan_jawaban'] }}
                     </p>
                 </div>
@@ -35,7 +35,7 @@
                     <div class="flex-1">
                         <label class="block text-sm font-medium text-gray-800 dark:text-gray-200">Nilai Unit</label>
                         <input type="text" value="{{ $criterion['nilai_unit'] }}"
-                               class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-200"
+                               class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-200"
                                readonly>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                     <div class="flex-1">
                         <label class="block text-sm font-medium text-gray-800 dark:text-gray-200">Nilai TPI</label>
                         <input type="text" value="{{ $criterion['nilai_tpi'] }}"
-                               class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-200"
+                               class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-200"
                                readonly>
                     </div>
                 </div>

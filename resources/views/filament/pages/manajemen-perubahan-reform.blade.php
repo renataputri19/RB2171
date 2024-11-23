@@ -18,10 +18,10 @@
             @livewire('manage-reform', ['selectedCategory' => 'Komitmen dalam Perubahan'])
         </div>
         <div id="komitmen-pimpinan" class="section hidden">
-            @livewire('manage-reform', ['selectedCategory' => 'Komitmen Pimpinan'])
+            @livewire('manage-criteria', ['selectedCategory' => 'Komitmen Pimpinan'])
         </div>
         <div id="membangun-budaya-kerja" class="section hidden">
-            @livewire('manage-reform', ['selectedCategory' => 'Membangun Budaya Kerja'])
+            @livewire('manage-criteria', ['selectedCategory' => 'Membangun Budaya Kerja'])
         </div>
     </div>
 

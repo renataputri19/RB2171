@@ -7,8 +7,10 @@ class ScoringService
     public static function calculateScore($answer, $options)
     {
 
-        // Ensure the answer is cast to a float
-        $answer = is_numeric($answer) ? (float) $answer : null;
+        // Ensure the answer is treated as a float for calculations involving numbers
+        if (in_array($options, ['%', 'Jumlah', 'Rupiah']) && is_numeric($answer)) {
+            return (float) $answer;
+        }
 
         // Handle percentages: cap the score at 1 if the answer exceeds 1
         if ($options === '%' && $answer !== null) {
@@ -46,8 +48,6 @@ class ScoringService
             case 'Jumlah':
                 return null;
                 
-            case 'Rupiah':
-                return $answer === null ? 0 : '';
 
             default:
                 return 0; // Default score
