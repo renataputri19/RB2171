@@ -232,26 +232,26 @@ class UpdateRowService
         if ($criterion->penilaian === 'a. Persentase Sasaran dengan capaian 100% atau lebih') {
             // Fetch related values
             $sasaranKinerja100Unit = (float) Criterion::where('category', $criterion->category)
-                ->where('penilaian', '- Jumlah Sasaran Kinerja')
+                ->where('penilaian', '- Jumlah Sasaran Kinerja yang tercapai 100% atau lebih')
                 ->value('jawaban_unit') ?? 0;
 
             $sasaranKinerjaUnit = (float) Criterion::where('category', $criterion->category)
-                ->where('penilaian', '- Jumlah Sasaran Kinerja yang tercapai 100% atau lebih')
+                ->where('penilaian', '- Jumlah Sasaran Kinerja')
                 ->value('jawaban_unit') ?? 0;
 
             $sasaranKinerja100Tpi = (float) Criterion::where('category', $criterion->category)
-                ->where('penilaian', '- Jumlah Sasaran Kinerja')
-                ->value('jawaban_tpi') ?? 0;
-
-            $sasaranKinerjaTpi = (float) Criterion::where('category', $criterion->category)
                 ->where('penilaian', '- Jumlah Sasaran Kinerja yang tercapai 100% atau lebih')
                 ->value('jawaban_tpi') ?? 0;
 
+            $sasaranKinerjaTpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah Sasaran Kinerja')
+                ->value('jawaban_tpi') ?? 0;
+
             // Calculate jawaban_unit
-            $jawabanUnit = $sasaranKinerja100Unit > 0 ? round($sasaranKinerjaUnit / $sasaranKinerja100Unit, 2) : null;
+            $jawabanUnit = $sasaranKinerjaUnit > 0 ? round($sasaranKinerja100Unit / $sasaranKinerjaUnit, 2) : null;
 
             // Calculate jawaban_tpi
-            $jawabanTpi = $sasaranKinerja100Tpi > 0 ? round($sasaranKinerjaTpi / $sasaranKinerja100Tpi, 2) : null;
+            $jawabanTpi = $sasaranKinerjaTpi > 0 ? round($sasaranKinerja100Tpi / $sasaranKinerjaTpi, 2) : null;
 
             return [
                 'jawaban_unit' => $jawabanUnit,
@@ -442,8 +442,43 @@ class UpdateRowService
                 'jawaban_tpi' => round($persentaseTpi, 2),
             ];
         }
+
+
+
+        // PENINGKATAN KUALITAS PELAYANAN PUBLIK
+
+        // b. Upaya dan/atau inovasi pada perijinan/pelayanan telah dipermudah
         
     
+        if ($criterion->penilaian === 'Upaya dan/atau inovasi pada perijinan/pelayanan telah dipermudah') {
+            // Fetch related values
+            $perijinanDipermudahUnit = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah perijinan/pelayanan yang telah dipermudah')
+                ->value('jawaban_unit') ?? 0;
+
+            $perijinanTerdaftarUnit = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah perijinan/pelayanan yang terdata/terdaftar')
+                ->value('jawaban_unit') ?? 0;
+
+            $perijinanDipermudahTpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah perijinan/pelayanan yang telah dipermudah')
+                ->value('jawaban_tpi') ?? 0;
+
+            $perijinanTerdaftarTpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah perijinan/pelayanan yang terdata/terdaftar')
+                ->value('jawaban_tpi') ?? 0;
+
+            // Calculate jawaban_unit
+            $jawabanUnit = $perijinanTerdaftarUnit > 0 ? round($perijinanDipermudahUnit / $perijinanTerdaftarUnit, 2) : null;
+
+            // Calculate jawaban_tpi
+            $jawabanTpi = $perijinanTerdaftarTpi > 0 ? round($perijinanDipermudahTpi / $perijinanTerdaftarTpi, 2) : null;
+
+            return [
+                'jawaban_unit' => $jawabanUnit,
+                'jawaban_tpi' => $jawabanTpi,
+            ];
+        }
         
         
 

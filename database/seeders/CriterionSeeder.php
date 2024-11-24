@@ -1198,6 +1198,65 @@ e. Tidak terdapat pengendalian atas aktivitas utama organisasi',
             ],
 
 
+
+            // PENINGKATAN KUALITAS PELAYANAN PUBLIK
+
+            // i. Upaya dan/atau Inovasi Pelayanan Publik
+
+            [
+                'penilaian' => 'Upaya dan/atau inovasi telah mendorong perbaikan pelayanan publik',
+                'kriteria_nilai' => 'a. Upaya dan/atau inovasi yang dilakukan telah mendorong perbaikan seluruh pelayanan publik yang prima (lebih Cepat dan mudah) 
+b. Upaya dan/atau inovasi yang dilakukan belum seluruhnya memberikan dampak pada perbaikan pelayanan public yang prima (Cepat dan mudah) 
+c. Upaya dan/atau inovasi yang dilakukan belum sesuai kebutuhan 
+d. Belum ada inovasi.',
+                'pilihan_jawaban' => 'A/B/C/D',
+                'category' => 'Peningkatan Kualitas Pelayanan Publik - Criteria',
+            ],
+            [
+                'penilaian' => 'Upaya dan/atau inovasi pada perijinan/pelayanan telah dipermudah',
+                'kriteria_nilai' => 'Persentase diperoleh dari Jumlah perijinan/pelayanan yang telah dipermudah dibagi dengan Jumlah perijinan/pelayanan yang terdata/terdaftar.
+                1. Waktu lebih cepat
+2. Pelayanan Publik yang terpadu
+3. Alur lebih pendek/singkat
+4 Terintegrasi dengan aplikasi',
+                'pilihan_jawaban' => '%',
+                'category' => 'Peningkatan Kualitas Pelayanan Publik - Reform',
+            ],
+            [
+                'penilaian' => '- Jumlah perijinan/pelayanan yang terdata/terdaftar',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Peningkatan Kualitas Pelayanan Publik - Reform',
+            ],
+
+            [
+                'penilaian' => '- Jumlah perijinan/pelayanan yang telah dipermudah',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Peningkatan Kualitas Pelayanan Publik - Reform',
+            ],
+
+
+
+            // ii.	Penanganan Pengaduan Pelayanan dan Konsultasi
+
+            [
+                'penilaian' => '-	Penanganan pengaduan pelayanan dilakukan melalui berbagai kanal/media secara responsive dan bertanggung jawab',
+                'kriteria_nilai' => 'a. Pengaduan pelayanan  dan konsultasi telah direspon dengan cepat melalui berbagai kanal/media
+b. Pengaduan pelayanan dan konsultasi telah direspon dengan cepat melalui kanal/media yang terbatas
+c. Pengaduan pelayanan dan konsultasi direspon lambat melalui berbagai kanal/media
+d. Pengaduan pelayanan dan konsultasi direspon lambat dan kanal/media terbatas',
+                'pilihan_jawaban' => 'A/B/C/D',
+                'category' => 'Penanganan Pengaduan Pelayanan dan Konsultasi',
+            ],
+            
+
+
+
+
+            
+
+
             
         ];
 
