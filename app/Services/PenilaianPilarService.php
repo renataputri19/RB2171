@@ -66,7 +66,11 @@ class PenilaianPilarService
             ],
         ];
         // Process each pillar and calculate values
-        return collect($pillars)->map(function ($pilar) {
+        $grandTotalBobot = 0;
+        $grandTotalNilaiUnit = 0;
+        $grandTotalNilaiTpi = 0;
+    
+        $processedPillars = collect($pillars)->map(function ($pilar) use (&$grandTotalBobot, &$grandTotalNilaiUnit, &$grandTotalNilaiTpi) {
             $totalBobot = 0;
             $totalNilaiUnit = 0;
             $totalNilaiTpi = 0;
@@ -76,7 +80,7 @@ class PenilaianPilarService
                     ->pluck('nilai_unit')
                     ->map(fn($value) => $value ?? 0) // Replace null with 0
                     ->average();
-
+    
                 $avgNilaiTpi = Criterion::where('category', $category['selectedCategory'])
                     ->pluck('nilai_tpi')
                     ->map(fn($value) => $value ?? 0) // Replace null with 0
@@ -97,6 +101,10 @@ class PenilaianPilarService
                 ];
             });
     
+            $grandTotalBobot += $totalBobot;
+            $grandTotalNilaiUnit += $totalNilaiUnit;
+            $grandTotalNilaiTpi += $totalNilaiTpi;
+    
             return [
                 'pilar' => $pilar['pilar'],
                 'categories' => $categories,
@@ -105,5 +113,21 @@ class PenilaianPilarService
                 'total_nilai_tpi' => number_format($totalNilaiTpi, 2),
             ];
         });
+    
+        return [
+            'pillars' => $processedPillars,
+            'summary' => [
+                'total_bobot' => number_format($grandTotalBobot, 2),
+                'total_nilai_unit' => number_format($grandTotalNilaiUnit, 2),
+                'total_nilai_tpi' => number_format($grandTotalNilaiTpi, 2),
+            ],
+        ];
     }
+
+
+
+
+
+
+    
 }
