@@ -1013,12 +1013,189 @@ c. Hasil assessment belum dijadikan dasar mutasi internal dan pengembangan kompe
             ],
             
 
+            // PENGUATAN AKUNTABILITAS
+
+
+            // i. Meningkatnya Capaian Kinerja Unit Kerja
+            [
+                'penilaian' => 'a. Persentase Sasaran dengan capaian 100% atau lebih',
+                'kriteria_nilai' => 'Persentase diperoleh dari Jumlah Sasaran Kinerja yang tercapai 100% atau lebih dibagi dengan Jumlah Sasaran Kinerja',
+                'pilihan_jawaban' => '%',
+                'category' => 'Meningkatnya Capaian Kinerja Unit Kerja',
+            ],
+            [
+                'penilaian' => '- Jumlah Sasaran Kinerja',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Meningkatnya Capaian Kinerja Unit Kerja',
+            ],
+            [
+                'penilaian' => '- Jumlah Sasaran Kinerja yang tercapai 100% atau lebih',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Meningkatnya Capaian Kinerja Unit Kerja',
+            ],
+
+            // ii. Pemberian Reward and Punishment
+            [
+                'penilaian' => 'a. Hasil Capaian/Monitoring Perjanjian Kinerja telah dijadikan dasar sebagai pemberian reward and punishment bagi organisasi',
+                'kriteria_nilai' => 'a. Seluruh capaian kinerja (Perjanjian Kinerja) merupakan unsur dalam pemberian reward and punishment
+b. Sebagian besar Capaian Kinerja (lebih dari 50% Perjanjian kinerja) merupakan unsur dalam pemberian reward and punishment
+c. Sebagian kecil Capaian Kinerja (kurang dari 50% Perjanjian kinerja) merupakan unsur dalam pemberian reward and punishment
+d. Capaian Kinerja (Perjanjian kinerja) belum menjadi unsur dalam pemberian reward and punishment',
+                'pilihan_jawaban' => 'A/B/C/D',
+                'category' => 'Pemberian Reward and Punishment',
+            ],
+
+            // iii. Kerangka Logis Kinerja
+            [
+                'penilaian' => 'a. Apakah terdapat penjenjangan kinerja ((Kerangka Logis Kinerja) yang mengacu pada kinerja utama  organisasi dan dijadikan dalam penentuan kinerja seluruh pegawai?',
+                'kriteria_nilai' => 'a. terdapat Kerangka Logis kinerja yang mengacu pada kinerja utama organisasi  dan digunakan dalam penjabaran kinerja seluruh pegawai
+b. terdapat  Kerangka Logis kinerja yang mengacu pada kinerja utama organisasi namun belum digunakan dalam penjabaran kinerja seluruh pegawai
+c. Kerangka Logis kinerja ada namun belum mengacu pada kinerja utama organisasi dan belum digunakan dalam penjabaran kinerja seluruh pegawai
+d. Kerangka Logis kinerja belum ada',
+                'pilihan_jawaban' => 'A/B/C/D',
+                'category' => 'Kerangka Logis Kinerja',
+            ],
+
+
+            // PENGUATAN PENGAWASAN
 
 
 
+            // i. Mekanisme Pengendalian
+            [
+                'penilaian' => 'a. Telah dilakukan mekanisme pengendalian aktivitas secara berjenjang',
+                'kriteria_nilai' => 'a. Terdapat pengendalian aktivitas utama organisasi yang tersistem mulai dari perencanaan, penilaian risiko, pelaksanaan, monitoring, dan pelaporan oleh penanggung jawab aktivitas serta pimpinan unit kerja dan telah menghasilkan peningkatan kinerja, mekanise kerja baru yang lebih efektif, efisien, dan terkendali
+b. Terdapat pengendalian aktivitas utama organisasi yang tersistem mulai dari perencanaan, penilaian risiko, pelaksanaan, monitoring, dan pelaporan oleh penanggung jawab aktivitas serta pimpinan unit kerja namun belum berdampak pada peningkatan kinerja unit kerja
+c.Terdapat pengendalian aktivitas utama organisasi yang tersistem mulai dari perencanaan, penilaian risiko, pelaksanaan, monitoring, dan pelaporan oleh penanggung jawab aktivitas
+d. Terdapat pengendalian aktivitas utama organisasi tetapi tidak tersistem
+e. Tidak terdapat pengendalian atas aktivitas utama organisasi',
+                'pilihan_jawaban' => 'A/B/C/D/E',
+                'category' => 'Mekanisme Pengendalian',
+            ],
 
+            // ii. Penanganan Pengaduan Masyarakat
+            [
+                'penilaian' => 'a. Persentase penanganan pengaduan masyarakat',
+                'kriteria_nilai' => 'Penilaian ini menghitung realisasi penanganan pengaduan masyarakat yang harus diselesaikan',
+                'pilihan_jawaban' => '%',
+                'category' => 'Penanganan Pengaduan Masyarakat',
+            ],
+            [
+                'penilaian' => '- Jumlah pengaduan masyarakat yang harus ditindaklanjuti',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Penanganan Pengaduan Masyarakat',
+            ],
+            [
+                'penilaian' => '- Jumlah pengaduan masyarakat yang sedang diproses',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Penanganan Pengaduan Masyarakat',
+            ],
+            [
+                'penilaian' => '- Jumlah pengaduan masyarakat yang selesai ditindaklanjuti',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Penanganan Pengaduan Masyarakat',
+            ],
 
+            // iii. Penyampaian Laporan Harta Kekayaan
+            
+            // a. Penyampaian Laporan Harta Kekayaan Pejabat Negara (LHKPN)
+            [
+                'penilaian' => 'a. Penyampaian Laporan Harta Kekayaan Pejabat Negara (LHKPN)',
+                'kriteria_nilai' => 'Kewajiban Penyelenggara Negara untuk melaporkan harta kekayaan diatur dalam: 
+1. Undang-Undang No. 28 Tahun 1999
+2. Undang-Undang No. 30 Tahun 2002
+3. Undang-Undang No. 10 Tahun 2015
+4. Peraturan Komisi Pemberantasan Korupsi No. 07 Tahun 2016
+5. Instruksi Presiden No. 5 Tahun 2004
+6. SE Menteri PANRB No. SE/03/M.PAN/01/2005
+7. SE Menteri PANRB No. 2 Tahun 2023',
+                'pilihan_jawaban' => '%',
+                'category' => 'Penyampaian Laporan Harta Kekayaan',
+            ],
 
+            [
+                'penilaian' => '- Jumlah yang harus melaporkan',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Penyampaian Laporan Harta Kekayaan',
+            ],
+
+            [
+                'penilaian' => '- Kepala satuan kerja',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Penyampaian Laporan Harta Kekayaan',
+            ],
+
+            [
+                'penilaian' => '- Pejabat yang diwajibkan menyampaikan LHKPN',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Penyampaian Laporan Harta Kekayaan',
+            ],
+
+            [
+                'penilaian' => '- Lainnya',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Penyampaian Laporan Harta Kekayaan',
+            ],
+            [
+                'penilaian' => '- Jumlah yang sudah melaporkan LHKPN',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Penyampaian Laporan Harta Kekayaan',
+            ],
+
+            // b. Penyampaian Laporan Harta Kekayaan Non LHKPN
+            [
+                'penilaian' => 'b. Penyampaian Laporan Harta Kekayaan Non LHKPN',
+                'kriteria_nilai' => 'Kewajiban Penyelenggara Negara untuk melaporkan harta kekayaan diatur dalam: 
+1. Undang-Undang No. 28 Tahun 1999
+2. Undang-Undang No. 30 Tahun 2002
+3. Undang-Undang No. 10 Tahun 2015
+4. Peraturan Komisi Pemberantasan Korupsi No. 07 Tahun 2016
+5. Instruksi Presiden No. 5 Tahun 2004
+6. SE Menteri PANRB No. SE/03/M.PAN/01/2005
+7. SE Menteri PANRB No. 2 Tahun 2023',
+                'pilihan_jawaban' => '%',
+                'category' => 'Penyampaian Laporan Harta Kekayaan',
+            ],
+            [
+                'penilaian' => '- Jumlah yang harus melaporkan (tidak wajib LHKPN)',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Penyampaian Laporan Harta Kekayaan',
+            ],
+            [
+                'penilaian' => '- Pejabat administrator (eselon III)',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Penyampaian Laporan Harta Kekayaan',
+            ],
+            [
+                'penilaian' => '- Pejabat pengawas (eselon IV)',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Penyampaian Laporan Harta Kekayaan',
+            ],
+            [
+                'penilaian' => '- Jumlah Fungsional dan Pelaksana',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Penyampaian Laporan Harta Kekayaan',
+            ],
+            [
+                'penilaian' => '- Jumlah yang sudah melaporkan Non LHKPN',
+                'kriteria_nilai' => '',
+                'pilihan_jawaban' => 'Jumlah',
+                'category' => 'Penyampaian Laporan Harta Kekayaan',
+            ],
 
 
             

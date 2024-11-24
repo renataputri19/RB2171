@@ -8,7 +8,7 @@ class ScoringService
     {
 
         // Ensure the answer is treated as a float for calculations involving numbers
-        if (in_array($options, ['%', 'Jumlah', 'Rupiah']) && is_numeric($answer)) {
+        if (in_array($options, ['%', 'Rupiah']) && is_numeric($answer)) {
             return (float) $answer;
         }
 

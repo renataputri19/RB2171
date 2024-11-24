@@ -20,6 +20,26 @@ class UpdateRowService
             // Save the new value immediately to ensure calculations use the latest data
             $criterion->save();
 
+            // Handle cascading updates for specific fields
+            if (
+                $criterion->penilaian === '- Kepala satuan kerja' ||
+                $criterion->penilaian === '- Pejabat yang diwajibkan menyampaikan LHKPN' ||
+                $criterion->penilaian === '- Lainnya' ||
+                $criterion->penilaian === '- Jumlah yang sudah melaporkan LHKPN'
+            ) {
+                self::updatePercentageFields($criterion->category);
+            }
+
+            // Handle cascading updates for specific fields
+            if (
+                $criterion->penilaian === '- Pejabat administrator (eselon III)' ||
+                $criterion->penilaian === '- Pejabat pengawas (eselon IV)' ||
+                $criterion->penilaian === '- Jumlah Fungsional dan Pelaksana' ||
+                $criterion->penilaian === '- Jumlah yang sudah melaporkan Non LHKPN'
+            ) {
+                self::updatePercentageFields($criterion->category);
+            }
+
             // Check if this is a "Jumlah" field that impacts a percentage field
             if (str_contains($criterion->penilaian, 'Jumlah')) {
                 self::updatePercentageFields($criterion->category);
@@ -56,6 +76,7 @@ class UpdateRowService
         return 'Row not found!';
     }
 
+
     private static function updatePercentageFields($category)
     {
         // Update all percentage fields in this category
@@ -84,6 +105,10 @@ class UpdateRowService
 
     private static function automatePercentageJawaban($criterion)
     {
+        
+        // MANAJEMEN PERUBAHAN	
+        // i.	Komitmen dalam perubahan
+        
         if ($criterion->penilaian === 'a. Agen perubahan telah membuat perubahan yang konkret di Instansi (dalam 1 tahun)') {
             // Fetch related values
             $jumlahAgenUnit = (float) Criterion::where('category', $criterion->category)
@@ -113,6 +138,7 @@ class UpdateRowService
                 'jawaban_tpi' => $jawabanTpi,
             ];
         }
+
 
         if ($criterion->penilaian === 'b. Perubahan yang dibuat Agen Perubahan telah terintegrasi dalam sistem manajemen') {
             // Fetch related values
@@ -145,7 +171,8 @@ class UpdateRowService
         }
         
 
-        // Pelanggaran Disiplin Pegawai
+        // PENATAAN SISTEM MANAJEMEN SDM APARATUR
+        // iii. Pelanggaran Disiplin Pegawai
         if ($criterion->penilaian === 'a. Penurunan pelanggaran disiplin pegawai') {
             // Fetch related values for Unit
             $pelanggaranSebelumnyaUnit = (float) Criterion::where('category', $criterion->category)
@@ -199,7 +226,229 @@ class UpdateRowService
         }
 
 
+        // PENGUATAN AKUNTABILITAS	
+        // i.	Meningkatnya capaian kinerja unit kerja
+        
+        if ($criterion->penilaian === 'a. Persentase Sasaran dengan capaian 100% atau lebih') {
+            // Fetch related values
+            $sasaranKinerja100Unit = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah Sasaran Kinerja')
+                ->value('jawaban_unit') ?? 0;
 
+            $sasaranKinerjaUnit = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah Sasaran Kinerja yang tercapai 100% atau lebih')
+                ->value('jawaban_unit') ?? 0;
+
+            $sasaranKinerja100Tpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah Sasaran Kinerja')
+                ->value('jawaban_tpi') ?? 0;
+
+            $sasaranKinerjaTpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah Sasaran Kinerja yang tercapai 100% atau lebih')
+                ->value('jawaban_tpi') ?? 0;
+
+            // Calculate jawaban_unit
+            $jawabanUnit = $sasaranKinerja100Unit > 0 ? round($sasaranKinerjaUnit / $sasaranKinerja100Unit, 2) : null;
+
+            // Calculate jawaban_tpi
+            $jawabanTpi = $sasaranKinerja100Tpi > 0 ? round($sasaranKinerjaTpi / $sasaranKinerja100Tpi, 2) : null;
+
+            return [
+                'jawaban_unit' => $jawabanUnit,
+                'jawaban_tpi' => $jawabanTpi,
+            ];
+        }
+
+
+        // PENGUATAN PENGAWASAN
+        // ii.	Penanganan Pengaduan Masyarakat
+
+        // Add logic for "Persentase penanganan pengaduan masyarakat"
+        if ($criterion->penilaian === 'a. Persentase penanganan pengaduan masyarakat') {
+            // Fetch values for jawaban_unit
+            $jumlahHarusDitindaklanjutiUnit = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah pengaduan masyarakat yang harus ditindaklanjuti')
+                ->value('jawaban_unit') ?? 0;
+        
+            $jumlahSedangDiprosesUnit = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah pengaduan masyarakat yang sedang diproses')
+                ->value('jawaban_unit') ?? 0;
+        
+            $jumlahSelesaiUnit = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah pengaduan masyarakat yang selesai ditindaklanjuti')
+                ->value('jawaban_unit') ?? 0;
+        
+            // Fetch values for jawaban_tpi
+            $jumlahHarusDitindaklanjutiTpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah pengaduan masyarakat yang harus ditindaklanjuti')
+                ->value('jawaban_tpi') ?? 0;
+        
+            $jumlahSedangDiprosesTpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah pengaduan masyarakat yang sedang diproses')
+                ->value('jawaban_tpi') ?? 0;
+        
+            $jumlahSelesaiTpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah pengaduan masyarakat yang selesai ditindaklanjuti')
+                ->value('jawaban_tpi') ?? 0;
+        
+            // Calculate jawaban_unit
+            $jawabanUnit = 0;
+            if (($jumlahSedangDiprosesUnit == 0 && $jumlahSelesaiUnit == 0) || ($jumlahSedangDiprosesUnit === null && $jumlahSelesaiUnit === null)) {
+                $jawabanUnit = 1; // Default to 100% if no complaints
+            } elseif ($jumlahHarusDitindaklanjutiUnit > 0) {
+                $jawabanUnit = $jumlahSelesaiUnit / $jumlahHarusDitindaklanjutiUnit;
+            }
+        
+            // Calculate jawaban_tpi
+            $jawabanTpi = 0;
+            if (($jumlahSedangDiprosesTpi == 0 && $jumlahSelesaiTpi == 0) || ($jumlahSedangDiprosesTpi === null && $jumlahSelesaiTpi === null)) {
+                $jawabanTpi = 1; // Default to 100% if no complaints
+            } elseif ($jumlahHarusDitindaklanjutiTpi > 0) {
+                $jawabanTpi = $jumlahSelesaiTpi / $jumlahHarusDitindaklanjutiTpi;
+            }
+        
+            return [
+                'jawaban_unit' => round($jawabanUnit, 2),
+                'jawaban_tpi' => round($jawabanTpi, 2),
+            ];
+        }
+
+        // iii.	Penyampaian Laporan Harta Kekayaan
+        // a. Penyampaian Laporan Harta Kekayaan Pejabat Negara (LHKPN)
+
+        if ($criterion->penilaian === 'a. Penyampaian Laporan Harta Kekayaan Pejabat Negara (LHKPN)') {
+            // Fetch values for jawaban_unit
+            $kepalaSatuanKerjaUnit = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Kepala satuan kerja')
+                ->value('jawaban_unit') ?? 0;
+        
+            $pejabatWajibLaporanUnit = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Pejabat yang diwajibkan menyampaikan LHKPN')
+                ->value('jawaban_unit') ?? 0;
+        
+            $lainnyaUnit = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Lainnya')
+                ->value('jawaban_unit') ?? 0;
+        
+            $sudahMelaporkanUnit = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah yang sudah melaporkan LHKPN')
+                ->value('jawaban_unit') ?? 0;
+        
+            // Fetch values for jawaban_tpi
+            $kepalaSatuanKerjaTpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Kepala satuan kerja')
+                ->value('jawaban_tpi') ?? 0;
+        
+            $pejabatWajibLaporanTpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Pejabat yang diwajibkan menyampaikan LHKPN')
+                ->value('jawaban_tpi') ?? 0;
+        
+            $lainnyaTpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Lainnya')
+                ->value('jawaban_tpi') ?? 0;
+        
+            $sudahMelaporkanTpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah yang sudah melaporkan LHKPN')
+                ->value('jawaban_tpi') ?? 0;
+        
+            // Calculate "Jumlah yang harus melaporkan" (K175)
+            $jumlahHarusMelaporkanUnit = $kepalaSatuanKerjaUnit + $pejabatWajibLaporanUnit + $lainnyaUnit;
+            $jumlahHarusMelaporkanTpi = $kepalaSatuanKerjaTpi + $pejabatWajibLaporanTpi + $lainnyaTpi;
+        
+            // Save "Jumlah yang harus melaporkan" into database
+            Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah yang harus melaporkan')
+                ->update([
+                    'jawaban_unit' => $jumlahHarusMelaporkanUnit,
+                    'jawaban_tpi' => $jumlahHarusMelaporkanTpi,
+                ]);
+        
+            // Calculate "Persentase penyampaian LHKPN" (K179 / K175)
+            $persentaseUnit = $jumlahHarusMelaporkanUnit > 0
+                ? $sudahMelaporkanUnit / $jumlahHarusMelaporkanUnit
+                : 0;
+        
+            $persentaseTpi = $jumlahHarusMelaporkanTpi > 0
+                ? $sudahMelaporkanTpi / $jumlahHarusMelaporkanTpi
+                : 0;
+        
+            // Return calculated percentages
+            return [
+                'jawaban_unit' => round($persentaseUnit, 2),
+                'jawaban_tpi' => round($persentaseTpi, 2),
+            ];
+        }
+
+        // b. Penyampaian Laporan Harta Kekayaan Non LHKPN
+        
+        if ($criterion->penilaian === 'b. Penyampaian Laporan Harta Kekayaan Non LHKPN') {
+            // Fetch values for jawaban_unit
+            $administratorUnit = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Pejabat administrator (eselon III)')
+                ->value('jawaban_unit') ?? 0;
+        
+            $pengawasUnit = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Pejabat Pengawas (eselon IV)')
+                ->value('jawaban_unit') ?? 0;
+        
+            $fungsionalUnit = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah Fungsional dan Pelaksana')
+                ->value('jawaban_unit') ?? 0;
+        
+            $sudahMelaporkanUnit = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah yang sudah melaporkan Non LHKPN')
+                ->value('jawaban_unit') ?? 0;
+        
+            // Fetch values for jawaban_tpi
+            $administratorTpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Pejabat administrator (eselon III)')
+                ->value('jawaban_tpi') ?? 0;
+        
+            $pengawasTpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Pejabat Pengawas (eselon IV)')
+                ->value('jawaban_tpi') ?? 0;
+        
+            $fungsionalTpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah Fungsional dan Pelaksana')
+                ->value('jawaban_tpi') ?? 0;
+        
+            $sudahMelaporkanTpi = (float) Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah yang sudah melaporkan Non LHKPN')
+                ->value('jawaban_tpi') ?? 0;
+        
+            // Calculate "Jumlah yang harus melaporkan (tidak wajib LHKPN)"
+            $jumlahHarusMelaporkanUnit = $administratorUnit + $pengawasUnit + $fungsionalUnit;
+            $jumlahHarusMelaporkanTpi = $administratorTpi + $pengawasTpi + $fungsionalTpi;
+        
+            // Update "Jumlah yang harus melaporkan (tidak wajib LHKPN)" row
+            Criterion::where('category', $criterion->category)
+                ->where('penilaian', '- Jumlah yang harus melaporkan (tidak wajib LHKPN)')
+                ->update([
+                    'jawaban_unit' => $jumlahHarusMelaporkanUnit,
+                    'jawaban_tpi' => $jumlahHarusMelaporkanTpi,
+                ]);
+        
+            // Calculate "Persentase penyampaian Non LHKPN"
+            $persentaseUnit = $jumlahHarusMelaporkanUnit > 0
+                ? $sudahMelaporkanUnit / $jumlahHarusMelaporkanUnit
+                : 0;
+        
+            $persentaseTpi = $jumlahHarusMelaporkanTpi > 0
+                ? $sudahMelaporkanTpi / $jumlahHarusMelaporkanTpi
+                : 0;
+        
+            return [
+                'jawaban_unit' => round($persentaseUnit, 2),
+                'jawaban_tpi' => round($persentaseTpi, 2),
+            ];
+        }
+        
+    
+        
+        
+
+        
+        
 
 
         return [

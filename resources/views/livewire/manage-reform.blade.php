@@ -20,13 +20,18 @@
                     <div class="flex space-x-4 mb-4">
                         <div class="flex-1">
                             <label class="block text-sm font-medium text-gray-800 dark:text-gray-200">Jawaban Unit</label>
-                            <input type="text" value="{{ $criterion['jawaban_unit'] }}"
-                                class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-200"
-                                wire:change="updateRow({{ $criterion['id'] }}, 'jawaban_unit', $event.target.value)">
+                            <input type="text" 
+                                value="{{ $criterion['jawaban_unit'] }}"
+                                class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 
+                                    {{ $criterion['penilaian'] === '- Jumlah yang harus melaporkan' || $criterion['penilaian'] === '- Jumlah yang harus melaporkan (tidak wajib LHKPN)' ? 'bg-gray-200 dark:bg-gray-900' : 'bg-white dark:bg-gray-800' }}
+                                    text-gray-900 dark:text-gray-200"
+                                wire:change="updateRow({{ $criterion['id'] }}, 'jawaban_unit', $event.target.value)"
+                                {{ $criterion['penilaian'] === '- Jumlah yang harus melaporkan' || $criterion['penilaian'] === '- Jumlah yang harus melaporkan (tidak wajib LHKPN)' ? 'readonly' : '' }}>
                         </div>
                         <div class="flex-1">
                             <label class="block text-sm font-medium text-gray-800 dark:text-gray-200">Nilai Unit</label>
-                            <input type="text" value="{{ $criterion['nilai_unit'] }}"
+                            <input type="text" 
+                                value="{{ $criterion['nilai_unit'] }}"
                                 class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-200"
                                 readonly>
                         </div>
@@ -36,17 +41,23 @@
                     <div class="flex space-x-4 mb-4">
                         <div class="flex-1">
                             <label class="block text-sm font-medium text-gray-800 dark:text-gray-200">Jawaban TPI</label>
-                            <input type="text" value="{{ $criterion['jawaban_tpi'] }}"
-                                class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-200"
-                                wire:change="updateRow({{ $criterion['id'] }}, 'jawaban_tpi', $event.target.value)">
+                            <input type="text" 
+                                value="{{ $criterion['jawaban_tpi'] }}"
+                                class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 
+                                    {{ $criterion['penilaian'] === '- Jumlah yang harus melaporkan' || $criterion['penilaian'] === '- Jumlah yang harus melaporkan (tidak wajib LHKPN)' ? 'bg-gray-200 dark:bg-gray-900' : 'bg-white dark:bg-gray-800' }}
+                                    text-gray-900 dark:text-gray-200"
+                                wire:change="updateRow({{ $criterion['id'] }}, 'jawaban_tpi', $event.target.value)"
+                                {{ $criterion['penilaian'] === '- Jumlah yang harus melaporkan' || $criterion['penilaian'] === '- Jumlah yang harus melaporkan (tidak wajib LHKPN)' ? 'readonly' : '' }}>
                         </div>
                         <div class="flex-1">
                             <label class="block text-sm font-medium text-gray-800 dark:text-gray-200">Nilai TPI</label>
-                            <input type="text" value="{{ $criterion['nilai_tpi'] }}"
+                            <input type="text" 
+                                value="{{ $criterion['nilai_tpi'] }}"
                                 class="block w-full border border-gray-300 dark:border-gray-600 rounded-md p-2 bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-200"
                                 readonly>
                         </div>
                     </div>
+
                 @else
                     <!-- Kriteria Nilai -->
                     <div class="mb-4">
