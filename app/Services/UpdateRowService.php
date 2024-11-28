@@ -18,8 +18,10 @@ class UpdateRowService
                 : $value;
 
                 
-            // Update the 'last_updated_by' column with the current user's name
-            $criterion->last_updated_by = auth()->user()->name;
+            // Update 'last_updated_by' only for specific fields
+            if (in_array($field, ['jawaban_unit', 'catatan_unit', 'bukti_dukung'])) {
+                $criterion->last_updated_by = auth()->user()->name;
+            }
 
             // Save the new value immediately to ensure calculations use the latest data
             $criterion->save();
