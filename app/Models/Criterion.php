@@ -22,5 +22,6 @@ class Criterion extends Model
         'nilai_tpi',
         'catatan_reviu_tpi',
         'category',
+        'last_updated_by',
     ];
 }

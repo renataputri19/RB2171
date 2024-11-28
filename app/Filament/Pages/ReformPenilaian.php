@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Filament\Pages;
-use App\Services\PenilaianReformService;
+use App\Services\PenilaianPilarService;
 
 
 use Filament\Pages\Page;
@@ -14,13 +14,11 @@ class ReformPenilaian extends Page
     protected static ?string $title = 'Penilaian Pilar Reform';
 
 
+    public $reform;
 
-    public $data;
-
-    // Fetch data from the service on mount
-    public function mount(PenilaianReformService $service)
+    public function mount(PenilaianPilarService $service)
     {
-        $this->data = $service->getReformPenilaianData();
+        $this->reform = $service->getReformData();
     }
 
     protected static string $view = 'filament.pages.reform-penilaian';

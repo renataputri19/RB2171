@@ -12,11 +12,11 @@ class PenilaianPilar extends Page
     protected static ?string $navigationLabel = 'Penilaian Pilar Pemenuhan';
     protected static ?string $title = 'Penilaian Pilar Pemenuhan';
 
-    public $data;
+    public $pemenuhan;
 
     public function mount(PenilaianPilarService $service)
     {
-        $this->data = $service->getPenilaianData();
+        $this->pemenuhan = $service->getPemenuhanData();
     }
     
 

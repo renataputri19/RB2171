@@ -12,11 +12,30 @@ class Nilai extends Page
     protected static ?string $navigationLabel = 'Nilai';
     protected static ?string $title = 'Nilai';
 
-    public $data;
+    public $pemenuhan;
+    public $reform;
+    public $grandTotal;
 
     public function mount(PenilaianPilarService $service)
     {
-        $this->data = $service->getPenilaianData();
+        $this->pemenuhan = $service->getPemenuhanData();
+        $this->reform = $service->getReformData();
+
+        // Calculate Grand Total
+        $this->grandTotal = [
+            'total_bobot' => number_format(
+                $this->pemenuhan['summary']['total_bobot'] + $this->reform['summary']['total_bobot'],
+                2
+            ),
+            'total_nilai_unit' => number_format(
+                $this->pemenuhan['summary']['total_nilai_unit'] + $this->reform['summary']['total_nilai_unit'],
+                2
+            ),
+            'total_nilai_tpi' => number_format(
+                $this->pemenuhan['summary']['total_nilai_tpi'] + $this->reform['summary']['total_nilai_tpi'],
+                2
+            ),
+        ];
     }
 
     protected static string $view = 'filament.pages.nilai';

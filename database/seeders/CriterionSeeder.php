@@ -16,6 +16,7 @@ class CriterionSeeder extends Seeder
                 'kriteria_nilai' => 'Ya, jika Tim telah dibentuk di dalam unit kerja.',
                 'pilihan_jawaban' => 'Ya/Tidak',
                 'category' => 'Penyusunan Tim Kerja',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Eknyx8phqytEsAB2kNpMO40BjH4G7Bb7TygZuJ6hvy0Y_w?e=xFuPKu',
             ],
             [
                 'penilaian' => 'b. Penentuan anggota Tim dipilih melalui prosedur/mekanisme yang jelas',
@@ -24,6 +25,7 @@ b. Jika sebagian menggunakan prosedur yang mewakili sebagian besar unsur dalam u
 c. Jika tidak di seleksi.',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Penyusunan Tim Kerja',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/En3hb03toAxErmP9wQmUZ3oBPp5KokSiOw_EmE50c1XxAA?e=0R7UVE',
             ],
             // Rencana Pembangunan Zona Integritas
             [
@@ -31,6 +33,7 @@ c. Jika tidak di seleksi.',
                 'kriteria_nilai' => 'Ya, jika memiliki rencana kerja pembangunan Zona Integritas.',
                 'pilihan_jawaban' => 'Ya/Tidak',
                 'category' => 'Rencana Pembangunan Zona Integritas',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EjvmAW8LrSBCuOqNpYSMWi8BxTecxTEc1fIC1BYfFBlxJA?e=8ZcKiB',
             ],
             [
                 'penilaian' => 'b. Dalam dokumen pembangunan terdapat target-target prioritas yang relevan dengan tujuan pembangunan WBK/WBBM',
@@ -39,6 +42,7 @@ b. Jika sebagian target-target prioritas relevan dengan tujuan pembangunan WBK/W
 c. Jika tidak ada target-target prioritas yang relevan dengan tujuan pembangunan WBK/WBBM',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Rencana Pembangunan Zona Integritas',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EsyGTs-yAI5Gm9CfEaAHp4YBR6FjKJMuBORIO9Be-2vyrw?e=WuOsAp',
             ],
             [
                 'penilaian' => 'c. Terdapat mekanisme atau media untuk mensosialisasikan pembangunan WBK/WBBM',
@@ -47,6 +51,7 @@ b. Jika pengelolaan media/aktivitas interaktif dilakukan secara terbatas dan tid
 c. Jika pengelolaan media/aktivitas interaktif belum dilakukan',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Rencana Pembangunan Zona Integritas',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EkIrFz6_gOhDt3jWYxwHuRUBsIydjPc8-4QbDuxbbYUsDw?e=aPC3ic',
             ],
             
             // Pemantauan dan Evaluasi
@@ -58,6 +63,7 @@ c. Jika sebagian kecil kegiatan pembangunan telah dilaksanakan sesuai dengan ren
 d. Jika belum ada kegiatan pembangunan yang dilakukan sesuai dengan rencana',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Pemantauan dan Evaluasi Pembangunan WBK/WBBM',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/El9xP_0injNAkcWoLcIK9CABHPQ6uwZa31CiQ9UTJjAtaA?e=zR1nGz',
             ],
             [
                 'penilaian' => 'b. Terdapat monitoring dan evaluasi terhadap pembangunan Zona Integritas',
@@ -67,6 +73,7 @@ c. Jika monitoring dan evaluasi tidak melibatkan pimpinan dan tidak secara berka
 d. Jika tidak terdapat monitoring dan evaluasi terhadap pembangunan zona integritas',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Pemantauan dan Evaluasi Pembangunan WBK/WBBM',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EjL94q_CtgRKjZ7dOz3miVMBxgUGqixbt8hrQcjBpJf4MQ?e=0uQFxj',
             ],
 
             [
@@ -77,6 +84,7 @@ c. Jika sebagian kecil catatan/rekomendasi hasil monitoring dan evaluasi tim int
 d. Jika catatan/rekomendasi hasil monitoring dan evaluasi tim internal atas persiapan dan pelaksanaan kegiatan Unit WBK/WBBM belum ditindaklanjuti',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Pemantauan dan Evaluasi Pembangunan WBK/WBBM',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Ev_ssv7OxWRCv44MLNwuwg8B2YvBXSIekDXZ5oO5XXyzOg?e=Ra3hx9',
             ],
 
             // Perubahan pola pikir dan budaya kerja 
@@ -85,6 +93,7 @@ d. Jika catatan/rekomendasi hasil monitoring dan evaluasi tim internal atas pers
                 'kriteria_nilai' => 'Ya, jika pimpinan menjadi contoh pelaksanaan nilai-nilai organisasi.',
                 'pilihan_jawaban' => 'Ya/Tidak',
                 'category' => 'Perubahan Pola Pikir dan Budaya Kerja',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EklGuJHsc8dBt4xsXbCVE9cBE8kZEjGDKcM_LI8ruSHuTA?e=nZpStq',
             ],
             [
                 'penilaian' => 'b. Sudah ditetapkan agen perubahan',
@@ -93,6 +102,7 @@ b. Jika agen perubahan telah ditetapkan namun belum berkontribusi terhadap perub
 c. Jika belum terdapat agen perubahan',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Perubahan Pola Pikir dan Budaya Kerja',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EhhTMjgVQpBLi_rrLYZbzdkBvWJL_YumLnFu01x4G47EyA?e=rnzECW',
             ],
             [
                 'penilaian' => 'c. Telah dibangun budaya kerja dan pola pikir di lingkungan organisasi',
@@ -101,6 +111,7 @@ b. Jika telah dilakukan upaya pembangunan budaya kerja dan pola pikir tapi masih
 c. Jika belum terdapat upaya pembangunan budaya kerja dan pola pikir',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Perubahan Pola Pikir dan Budaya Kerja',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/El0cBMeptDVMvv3dCsr9mmsBZz7Skvy6L9_ohUR6uloyKQ?e=ZA5EvK',
             ],
             [
                 'penilaian' => 'd. Anggota organisasi terlibat dalam pembangunan Zona Integritas menuju WBK/WBBM',
@@ -110,6 +121,7 @@ c. Jika sebagian kecil anggota terlibat dalam pembangunan Zona Integritas menuju
 d. Jika belum ada anggota terlibat dalam pembangunan Zona Integritas menuju WBK/WBBM',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Perubahan Pola Pikir dan Budaya Kerja',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EgRIWlQLtTFLt-gEe7shWxwBLMVWmqQ3SuJPpHp8PmKf5Q?e=UsYoHM',
             ],
 
             // Penataan Tatalaksana
@@ -123,6 +135,7 @@ c. Jika sebagian SOP unit telah mengacu peta proses bisnis
 d. Jika belum terdapat SOP unit yang mengacu peta proses bisnis.',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Prosedur Operasional Tetap (SOP) Kegiatan Utama',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EgWthBmPo71NuFA3nQLaBNQBub7Ms-wUBU33hVr_02cq3A?e=bqaYCa',
             ],
             [
                 'penilaian' => 'b. Prosedur operasional tetap (SOP) telah diterapkan',
@@ -133,6 +146,7 @@ d. Jika unit telah menerapkan sebagian kecil SOP yang ditetapkan organisasi
 e. Jika unit belum menerapkan SOP yang telah ditetapkan organisasi',
                 'pilihan_jawaban' => 'A/B/C/D/E',
                 'category' => 'Prosedur Operasional Tetap (SOP) Kegiatan Utama',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EqQCiD8vmOVEnppETTQvGx8BxJnUDCvQy9lY0jplXFewDA?e=m1DgP9',
             ],
 
             [
@@ -144,6 +158,7 @@ d. Jika sebagian kecil SOP utama telah dievaluasi
 e. Jika SOP belum pernah dievaluasi',
                 'pilihan_jawaban' => 'A/B/C/D/E',
                 'category' => 'Prosedur Operasional Tetap (SOP) Kegiatan Utama',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/ElZLDqLQeU1IiNMnj5IUPosBlyvyGxKyHlr-SsXOf_MP2A?e=8mGQSK',
             ],
 
             // Sistem Pemerintahan Berbasis Elektronik (SPBE)
@@ -154,12 +169,14 @@ b. Jika unit memiliki sistem pengukuran kinerja (e-performance/e-sakip) yang men
 c. Jika belum memiliki sistem pengukuran kinerja (e-performance/e-sakip) yang menggunakan teknologi informasi',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Sistem Pemerintahan Berbasis Elektronik (SPBE)',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Et2HUXFygc9EtepIJQYHqLABiAOisDrpykuAt9iRPNpJMQ?e=z0nm6O',
             ],
             [
                 'penilaian' => 'b. Operasionalisasi manajemen SDM sudah menggunakan teknologi informasi',
                 'kriteria_nilai' => 'Jika sistem e-performance sudah diterapkan.',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Sistem Pemerintahan Berbasis Elektronik (SPBE)',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Eu0k_XlJA3xFsfvSqdMsYk8BZN63YivgusXhYkG7wJDc_g?e=sKsdjT',
             ],
             [
                 'penilaian' => 'c. Pemberian pelayanan kepada publik sudah menggunakan teknologi informasi',
@@ -168,6 +185,7 @@ b. Jika unit memberikan pelayanan kepada publik dengan menggunakan teknologi inf
 c. Jika belum memberikan pelayanan kepada publik dengan menggunakan teknologi informasi',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Sistem Pemerintahan Berbasis Elektronik (SPBE)',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EqnNeCeHJG5JhssPZwENFMgBt66e3pYrdgFxkA_o2_IpKQ?e=UehyYe',
             ],
             [
                 'penilaian' => 'd. Telah dilakukan monitoring dan dan evaluasi terhadap pemanfaatan teknologi informasi dalam pengukuran kinerja unit, operasionalisasi SDM, dan pemberian layanan kepada publik',
@@ -176,6 +194,7 @@ b. Jika laporan monitoring dan evaluasi terhadap pemanfaatan teknologi informasi
 c. Jika tidak terdapat monitoring dan evaluasi terhadap pemanfaatan teknologi informasi dalam pengukuran kinerja unit, operasionalisasi SDM, dan pemberian layanan kepada publik',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Sistem Pemerintahan Berbasis Elektronik (SPBE)',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EnakU2Z9ajdCgJIT_2WYbGcBITQtQbnWefk_dbDDAzQ-tA?e=bJ7i9l',
             ],
             
             
@@ -187,6 +206,7 @@ b. Jika sudah terdapat PPID yang menyebarkan sebagian informasi yang dapat diaks
 c. Jika belum ada PPID dan belum melakukan penyebaran informasi publik',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Keterbukaan Informasi Publik',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/ErLlncfglxxKrOGmMgkMQ3EB2SnIkxp8k24nndCA1qyk9g?e=l4Hr42',
             ],
             [
                 'penilaian' => 'b. Telah dilakukan monitoring dan evaluasi pelaksanaan kebijakan keterbukaan informasi publik',
@@ -195,6 +215,7 @@ b. Jika monitoring dan evaluasi pelaksanaan kebijakan keterbukaan informasi publ
 c. Jika monitoring dan evaluasi pelaksanaan kebijakan keterbukaan informasi publik belum dilakukan',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Keterbukaan Informasi Publik',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EmwedvxU3BREskz79VldW8ABZb1YvpJyjTyQdPnUAS9evw?e=SzqAjo',
             ],
 
 
@@ -206,6 +227,7 @@ c. Jika monitoring dan evaluasi pelaksanaan kebijakan keterbukaan informasi publ
                 'kriteria_nilai' => 'Ya, jika kebutuhan pegawai yang disusun oleh unit kerja mengacu kepada peta jabatan dan hasil analisis beban kerja untuk masing-masing jabatan.',
                 'pilihan_jawaban' => 'Ya/Tidak',
                 'category' => 'Perencanaan Kebutuhan Pegawai',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Elk4plzLC7ZCiIVbS4bvCg0BXHGmLKx6s3OconS6iGYY2w?e=agxsJE',
             ],
 
             [
@@ -216,6 +238,7 @@ c. Jika sebagian kecil penempatan pegawai hasil rekrutmen murni mengacu kepada k
 d. Jika penempatan pegawai hasil rekrutmen murni tidak mengacu kepada kebutuhan pegawai yang telah disusun per jabatan',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Perencanaan Kebutuhan Pegawai',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EuzVmMtdJ8BPuTKMHh9bY5oBoaYULqDJpmw6-RVlyA5gqg?e=uRdhr7',
             ],
 
             [
@@ -223,6 +246,7 @@ d. Jika penempatan pegawai hasil rekrutmen murni tidak mengacu kepada kebutuhan 
                 'kriteria_nilai' => 'Ya, jika sudah dilakukan monitoring dan evaluasi terhadap penempatan pegawai hasil rekrutmen untuk memenuhi kebutuhan jabatan dalam organisasi telah memberikan perbaikan terhadap kinerja unit kerja.',
                 'pilihan_jawaban' => 'Ya/Tidak',
                 'category' => 'Perencanaan Kebutuhan Pegawai',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/ErlLEM-ypxxFjU8jlFZP2GsBU36BpWclpPS1_mYSAgFq8A?e=2mYvnl',
             ],
             // ii. Pola Mutasi Internal
             [
@@ -230,6 +254,7 @@ d. Jika penempatan pegawai hasil rekrutmen murni tidak mengacu kepada kebutuhan 
                 'kriteria_nilai' => 'Ya, jika dilakukan mutasi pegawai antar jabatan sebagai wujud dari pengembangan karier pegawai.',
                 'pilihan_jawaban' => 'Ya/Tidak',
                 'category' => 'Pola Mutasi Internal',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EooEbL9f6kRMsV5Ua4tiCfMBt4ahFu7TUoe75kzJJrkeZA?e=vsybKf',
             ],
             [
                 'penilaian' => 'b.	Dalam melakukan mutasi pegawai antar jabatan telah memperhatikan kompetensi jabatan dan mengikuti pola mutasi yang telah ditetapkan',
@@ -240,12 +265,14 @@ d. Jika sebagian kecil semua mutasi pegawai antar jabatan telah memperhatikan ko
 e. Jika mutasi pegawai antar jabatan belum memperhatikan kompetensi jabatan dan mengikuti pola mutasi yang telah ditetapkan organisasi',
                 'pilihan_jawaban' => 'A/B/C/D/E',
                 'category' => 'Pola Mutasi Internal',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EuoOxXXhy5lEtzDQRv1bCMMBLH_-AF9FqVlNkZ4BgZlsZg?e=WcaoVE',
             ],
             [
                 'penilaian' => 'c.	Telah dilakukan monitoring dan evaluasi terhadap kegiatan mutasi yang telah dilakukan dalam kaitannya dengan perbaikan kinerja',
                 'kriteria_nilai' => 'Ya, jika sudah dilakukan monitoring dan evaluasi terhadap kegiatan mutasi yang telah dilakukan dalam kaitannya dengan perbaikan kinerja.',
                 'pilihan_jawaban' => 'Ya/Tidak',
                 'category' => 'Pola Mutasi Internal',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Eh1izUYOBv5FuJv7AayDee4BwWj0jh5oSceIyE76Yzk63Q?e=bCvnNS',
             ],
             // iii. Pengembangan Pegawai Berbasis Kompetensi
             [
@@ -253,6 +280,7 @@ e. Jika mutasi pegawai antar jabatan belum memperhatikan kompetensi jabatan dan 
                 'kriteria_nilai' => 'Ya, jika sudah dilakukan Training Need Analysis Untuk pengembangan kompetensi.',
                 'pilihan_jawaban' => 'Ya/Tidak',
                 'category' => 'Pengembangan Pegawai',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Egywd7TnPsNBprLA1_Nmx_wBZ0OpVXQMoQjbzswNkpiUjQ?e=VKJkeR',
             ],
 
             [
@@ -263,6 +291,7 @@ c. Jika sebagian kecil rencana pengembangan kompetensi pegawai mempertimbangkan 
 d. Jika belum ada rencana pengembangan kompetensi pegawai yang mempertimbangkan hasil pengelolaan kinerja pegawai',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Pengembangan Pegawai',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Eg0G8J7NTdxGtRaxZRm8OnAB9eqcF5DJtFbJYYuDM6-P4g?e=5f1SKX',
             ],
 
             [
@@ -273,6 +302,7 @@ c. Jika  sebagian besar kompetensi pegawai dengan standar kompetensi yang diteta
 d. Jika persentase kesenjangan kompetensi pegawai dengan standar kompetensi yang ditetapkan sebesar >75%-100%',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Pengembangan Pegawai',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Etkmwt6wf3ZOpd3jm7P9yT4BATnYJOYACD7ZK-NCMipqKA?e=obZeaE',
             ],
 
             [
@@ -283,6 +313,7 @@ c. Jika sebagian kecil pegawai di Unit Kerja telah memperoleh kesempatan/hak unt
 d. Jika belum ada pegawai di Unit Kerja telah memperoleh kesempatan/hak untuk mengikuti diklat maupun pengembangan kompetensi lainnya',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Pengembangan Pegawai',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EiYUj9MKcQJOi3w-nEzctbMBclwu0PfJJDbjPFnwW0DwjA?e=ChGd9Z',
             ],
 
             [
@@ -293,6 +324,7 @@ c. Jika unit kerja melakukan upaya pengembangan kompetensi kepada sebagian kecil
 d. Jika unit kerja belum melakukan upaya pengembangan kompetensi kepada pegawai',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Pengembangan Pegawai',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EtLHX1GK4SNFpkiOTPie570BuCSdndXC3kyzCZARM4L5tA?e=ATjO1X',
             ],
 
             [
@@ -302,6 +334,7 @@ b. Jika monitoring dan evaluasi terhadap hasil pengembangan kompetensi dalam kai
 c. Jika monitoring dan evaluasi terhadap hasil pengembangan kompetensi dalam kaitannya dengan perbaikan kinerja belum dilakukan',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Pengembangan Pegawai',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/ErSDpHqyQCtMg5L3_0HwsqIBNr0GIcBQbwl_HvpRNEnbZw?e=eWlAri',
             ],
 
             // iv. Penetapan Kinerja Individu 
@@ -313,6 +346,7 @@ c. Jika sebagian kecil penetapan kinerja individu terkait dengan kinerja organis
 d. Jika belum ada penetapan kinerja individu terkait dengan kinerja organisasi',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Penetapan Kinerja Individu',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Em57H_NStLdBoVa5iwRPVsIBBz_GaOuxEO3sx2iVJYIeaw?e=WCKVpm',
             ],
 
             [
@@ -323,6 +357,7 @@ c. Jika sebagian kecil ukuran kinerja individu telah memiliki kesesuaian dengan 
 d. Jika ukuran kinerja individu belum memiliki kesesuaian dengan indikator kinerja individu level diatasnya',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Penetapan Kinerja Individu',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EineGSzX6MZCvL0N-GsjEm8B5kLSQl2JBQiBnDhfAqmOvw?e=8tB4oN',
             ],
 
             [
@@ -334,6 +369,7 @@ d. Jika pengukuran kinerja individu dilakukan secara tahunan
 e. Jika pengukuran kinerja individu belum dilakukan.',
                 'pilihan_jawaban' => 'A/B/C/D/E',
                 'category' => 'Penetapan Kinerja Individu',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Ejvyp3rV09tBsvZtB007uCQB1P9IGxRUdGBzMdDcBwe5-A?e=dFncyq',
             ],
 
             [
@@ -341,6 +377,7 @@ e. Jika pengukuran kinerja individu belum dilakukan.',
                 'kriteria_nilai' => 'Ya, jika hasil hasil penilaian kinerja individu telah dijadikan dasar untuk pemberian reward (Seperti: pengembangan karir individu, atau penghargaan)',
                 'pilihan_jawaban' => 'Ya/Tidak',
                 'category' => 'Penetapan Kinerja Individu',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Evt1v-If1bZFuynxWYAdCL0Bw-tQJYW1WcXetMYouwbsYg?e=Dyh9Fw',
             ],
             // v. Penegakan Aturan Disiplin/Kode Etik/Kode Perilaku Pegawai 
             [
@@ -351,6 +388,7 @@ c. Jika unit kerja telah mengimplementasikan sebagian aturan disiplin/kode etik/
 d. Jika unit kerja belum mengimplementasikan aturan disiplin/kode etik/kode perilaku yang ditetapkan organisasi',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Penegakan Aturan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EoRNhxcBG-dMi3JQXmHJZv4BTXPxu3bhJZuVf-O8vagQuA?e=3a0zD8',
             ],
             // vi. Sistem Informasi Kepegawaian 
             [
@@ -360,6 +398,7 @@ b. Jika data informasi kepegawaian unit kerja dapat diakses oleh pegawai dan  di
 c. Jika data informasi kepegawaian unit kerja belum dimutakhirkan',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Sistem Informasi Kepegawaian',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EsaYMMioy_dLpE7SO228iCgBlrUotivJYhkjyQ85VqPKzg?e=Zz0AuM',
             ],
 
 
@@ -374,6 +413,7 @@ b. Jika pimpinan ikut terlibat dalam sebagian tahapan penyusunan perencanaan
 c. Jika tidak ada keterlibatan pimpinan dalam penyusunan perencanaan (hanya menandatangani)',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Keterlibatan Pimpinan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Evbrpq6JwLVMrBQjLc2Pju8B5ujzUwpl4Uiikjmhg1BM5A?e=PngM3a',
             ],
             [
                 'penilaian' => 'b. Unit kerja telah melibatkan secara langsung pimpinan saat penyusunan penetapan kinerja',
@@ -382,6 +422,7 @@ b. Jika pimpinan terlibat dalam sebagian tahapan penyusunan perjanjian kinerja
 c. Jika tidak ada keterlibatan pimpinan dalam penyusunan perjanjian kinerja',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Keterlibatan Pimpinan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EkK3j649OTFJmulPQQXTPF0Burzgy5FAxF7BvQER5Emcfw?e=2fK26m',
             ],
             [
                 'penilaian' => 'c. Pimpinan memantau pencapaian kinerja secara berkala',
@@ -391,6 +432,7 @@ c. Jika pimpinan unit kerja terlibat dalam sebagian pemantauan pencapaian kinerj
 d. Jika tidak ada keterlibatan pimpinan dalam pemantauan pencapaian kinerja',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Keterlibatan Pimpinan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EvBsPEH0rVNNioaQ4gWRAf4BrH__gG0tCjmbSwt8aGABog?e=XyL7BL',
             ],
 
             // ii. Pengelolaan Akuntabilitas Kinerja
@@ -399,12 +441,14 @@ d. Jika tidak ada keterlibatan pimpinan dalam pemantauan pencapaian kinerja',
                 'kriteria_nilai' => 'Ya, jika unit kerja memiliki dokumen perencanaan kinerja lengkap.',
                 'pilihan_jawaban' => 'Ya/Tidak',
                 'category' => 'Pengelolaan Akuntabilitas Kinerja',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EsizjuqYppNJikM1OElPnQAB-7DXAm9mZOWg2ESqG-Y6jA?e=x8ayve',
             ],
             [
                 'penilaian' => 'b. Perencanaan kinerja telah berorientasi hasil',
                 'kriteria_nilai' => 'Ya, jika perencanaan kinerja telah berorientasi hasil.',
                 'pilihan_jawaban' => 'Ya/Tidak',
                 'category' => 'Pengelolaan Akuntabilitas Kinerja',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EsmYRy61fgVHr5edHfVNScABI2rfr4DVfS19iFCSUdnoRw?e=TkXf10',
             ],
 
             [
@@ -412,6 +456,7 @@ d. Jika tidak ada keterlibatan pimpinan dalam pemantauan pencapaian kinerja',
                 'kriteria_nilai' => 'Ya, jika unit kerja memiliki IKU',
                 'pilihan_jawaban' => 'Ya/Tidak',
                 'category' => 'Pengelolaan Akuntabilitas Kinerja',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EtMV4TbE5BdKmD-oaXwpw4oBlKjefzKuqp4KbdeLG5P-Tg?e=Lo9a4D',
             ],
             [
                 'penilaian' => 'd.	Indikator kinerja telah telah memenuhi kriteria SMART',
@@ -421,6 +466,7 @@ c. Jika sebagian kecil indikator kinerja telah SMART
 d. Jika belum ada indikator kinerja yang SMART',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Pengelolaan Akuntabilitas Kinerja',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EvFizy-5CjZImaH4OnILgQ0B5bwHnEXFMs7VtKtbpMa0XQ?e=TUPcrm',
             ],
 
             [
@@ -428,6 +474,7 @@ d. Jika belum ada indikator kinerja yang SMART',
                 'kriteria_nilai' => 'Ya, jika unit kerja telah menyusun laporan kinerja tepat waktu',
                 'pilihan_jawaban' => 'Ya/Tidak',
                 'category' => 'Pengelolaan Akuntabilitas Kinerja',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Eu0zK8Fgv61Erl6Uvo8jAlEBhw-sDuyjEFKQ7L8ZOUbLOA?e=l0VUEN',
             ],
             [
                 'penilaian' => 'f.	Laporan kinerja telah memberikan informasi tentang kinerja',
@@ -436,6 +483,7 @@ b. Jika sebagian pelaporan kinerja belum memberikan informasi tentang kinerja
 c. Jika seluruh pelaporan kinerja belum memberikan informasi tentang kinerja',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Pengelolaan Akuntabilitas Kinerja',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/El9BmZH_aO1Ng2hXPNcgiLcBpAmzBdfr9U5XBDJsJG2A9g?e=NZ5Cij',
             ],
 
             [
@@ -443,6 +491,7 @@ c. Jika seluruh pelaporan kinerja belum memberikan informasi tentang kinerja',
                 'kriteria_nilai' => 'Ya, jika terdapat sistem informasi/mekanisme informasi kinerja',
                 'pilihan_jawaban' => 'Ya/Tidak',
                 'category' => 'Pengelolaan Akuntabilitas Kinerja',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/ElbJszdD4s9AtKkyGSOpKdsBjF5wKBGne1QviLlEjC3X5Q?e=KhwzBa',
             ],
             [
                 'penilaian' => 'h	Unit kerja telah berupaya meningkatkan kapasitas SDM yang menangangi akuntabilitas kinerja',
@@ -451,6 +500,7 @@ b. Jika sebagian SDM pengelola akuntabilitas kinerja kompeten
 c. Jika seluruh SDM pengelola akuntabilitas kinerja belum ada yang kompeten',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Pengelolaan Akuntabilitas Kinerja',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EjtlO4VTMHNAjWPx8fRt98gBN3gAgmGsWpZ4IVCZ3WkECQ?e=MBUtdG',
             ],
 
 
@@ -467,6 +517,7 @@ b. Jika public campaign dilakukan tidak secara berkala
 c. Jika belum dilakukan public campaign',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Pengendalian Gratifikasi',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EqLMD5l43AZIs_g6c_CWzvUBlcbvNOUiQTTwW4eBPt9Uag?e=mwfCtj',
             ],
             [
                 'penilaian' => 'b. Pengendalian gratifikasi telah diimplementasikan',
@@ -476,6 +527,7 @@ c. Jika telah membentuk Unit Pengendalian Gratifikasi tetapi belum terdapat pros
 d. Jika belum memiliki Unit Pengendalian Gratifikasi',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Pengendalian Gratifikasi',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EguyNW1_8StPoa3352dyD_kB-S1paTak6Ern4twfF20k6w?e=2vcpaJ',
             ],
 
             // ii. Penerapan Sistem Pengendalian Intern Pemerintah (SPIP)
@@ -488,6 +540,7 @@ d. Jika unit kerja membangun sebagian kecil lingkungan pengendalian sesuai denga
 e. Jika unit kerja belum membangun lingkungan pengendalian',
                 'pilihan_jawaban' => 'A/B/C/D/E',
                 'category' => 'Penerapan SPIP',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EtxbvMNDa6VEhpcB98BtejkBFvQDQ9mz3KTdBGikgrGJTg?e=TYThn6',
             ],
 
             [
@@ -499,6 +552,7 @@ d. Jika melakukan penilaian risiko atas sebagian kecil pelaksanaan kebijakan ses
 e. Jika unit kerja belum melakukan penilaian resiko',
                 'pilihan_jawaban' => 'A/B/C/D/E',
                 'category' => 'Penerapan SPIP',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/En_2qh_fxEpFqA2ssllLykgBv4vqYdljCV4JvRe4xqA6kQ?e=UXDyx3',
             ],
 
             [
@@ -508,6 +562,7 @@ b. Jika unit kerja melakukan kegiatan pengendalian untuk meminimalisir resiko se
 c. Jika unit kerja belum melakukan kegiatan pengendalian untuk meminimalisir resiko',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Penerapan SPIP',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EiQV7ascRSNMqSO8Jd0DO2IBBbVGvSGW6m5eGgfGRyRslA?e=koNfQS',
             ],
 
             [
@@ -518,6 +573,7 @@ c. Jika SPI belum diinformasikan dan dikomunikasikan kepada pihak terkait
 ',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Penerapan SPIP',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EnQMfMx9CG9DknqqZw88G8YB9pwQi_ljS5mTzYX7rKLx_g?e=ulsRau',
             ],
 
             // iii. Pengaduan Masyarakat
@@ -528,6 +584,7 @@ b. Jika unit kerja telah mengimplementasikan seluruh kebijakan pengaduan masyara
 c. Jika unit kerja belum mengimplementasikan kebijakan pengaduan masyarakat',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Pengaduan Masyarakat',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Eq484c7WvHhFvw_a_bdqnn8BDnDhbt8-6TCgkNq_ItMv_g?e=iiuBee',
             ],
 
             [
@@ -535,6 +592,7 @@ c. Jika unit kerja belum mengimplementasikan kebijakan pengaduan masyarakat',
                 'kriteria_nilai' => 'Ya, pengaduan masyaakat ditindaklanjuti',
                 'pilihan_jawaban' => 'Ya/Tidak',
                 'category' => 'Pengaduan Masyarakat',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EnGP2Q_Xbh5Ohjx9jRqbkasBwZ9aJOG95lGY2zq82bYyPQ?e=3ptfmv',
             ],
 
             [
@@ -544,6 +602,7 @@ b. Jika penanganan pengaduan masyarakat dimonitoring dan evaluasi tetapi tidak s
 c. Jika penanganan pengaduan masyarakat belum di monitoring dan evaluasi',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Pengaduan Masyarakat',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Eg9qY9EC-B1NvTrcR5oggxUB-oWDlM9XpURQkUeXEK4OKw?e=23d4i6',
             ],
 
             [
@@ -553,6 +612,7 @@ b. Jika sebagian hasil evaluasi atas penanganan pengaduan telah ditindaklanjuti 
 c. Jika hasil evaluasi atas penanganan pengaduan belum ditindaklanjuti',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Pengaduan Masyarakat',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Ev02XUotmZlPsuAX2PF-9OwBsMsR2E89OjOmDKyHkXxBLw?e=bJ1M85',
             ],
 
             // iv. Whistle-Blowing System
@@ -563,6 +623,7 @@ b. Jika unit kerja menerapkan kebijakan Whistle Blowing System sesuai dengan yan
 c. Jika unit kerja belum menerapkan kebijakan Whistle Blowing System',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Whistle-Blowing System',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EiF1twRqQkpApAglmap66E4BqEAeE91UR549fMJ4bBjMRw?e=QiPW3P',
             ],
 
             [
@@ -572,6 +633,7 @@ b. Jika penerapan Whistle Blowing System dimonitoring dan evaluasi tidak secara 
 c. Jika penerapan Whistle Blowing System belum di monitoring dan evaluasi',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Whistle-Blowing System',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EkkNf33HHNlJnPbCjCKYiiYB1KVP3Uw9UrNZ2yFnKsLHpQ?e=xDbtXm',
             ],
 
             [
@@ -581,6 +643,7 @@ b. Jika sebagian hasil evaluasi atas penerapan Whistle Blowing System telah diti
 c. Jika hasil evaluasi atas penerapan Whistle Blowing System belum ditindaklanjuti',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Whistle-Blowing System',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EuAb7iFto5hMkIU8LCBGx6cB_5iA34XIipYhBjss2gnyuQ?e=4Ldasw',
             ],
 
             // v. Penanganan Benturan Kepentingan
@@ -592,6 +655,7 @@ c. Jika terdapat  identifikasi/pemetaan benturan kepentingan tetapi pada sebagia
 d. Jika belum terdapat  identifikasi/pemetaan benturan kepentingan dalam tugas fungsi utama',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Penanganan Benturan Kepentingan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EmFOnWLq2FNNjCWTtC9ag0EBgFgrEnuSaF3GRrRWnQPfZw?e=MpdjOU',
             ],
 
             [
@@ -602,6 +666,7 @@ c.  Jika penanganan Benturan Kepentingan disosialiasikan/diinternalisasikan ke s
 d.  Jika penanganan Benturan Kepentingan belum disosialiasikan/diinternalisasikan ke seluruh layanan',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Penanganan Benturan Kepentingan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Eiwt3RTJD3xKtClCHifWu6gBMzTtuD_hjqfNVBcljB0Gmg?e=Pfuroo',
             ],
 
             [
@@ -612,6 +677,7 @@ c. Jika penanganan Benturan Kepentingan diimplementasikan ke sebagian kecil laya
 d. Jika penanganan Benturan Kepentingan belum diimplementasikan ke seluruh layanan',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Penanganan Benturan Kepentingan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EgHSYEZLLIxOh6QShbSK70QB78Fvz0AfMQJUPgeliCt00g?e=ekdM2L',
             ],
 
             [
@@ -621,6 +687,7 @@ b. Jika penanganan Benturan Kepentingan dievaluasi tetapi tidak secara berkala o
 c. Jika penanganan Benturan Kepentingan belum dievaluasi oleh unit kerja',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Penanganan Benturan Kepentingan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EqwAwq1wYSNDnjZrTmAbkZ8BuOXkPOEU8c2tAA0ER2y1jg?e=xWdIyd',
             ],
 
             [
@@ -630,6 +697,7 @@ b. Jika sebagian hasil evaluasi atas Penanganan Benturan Kepentingan telah ditin
 c. Jika belum ada hasil evaluasi atas Penanganan Benturan Kepentingan yang ditindaklanjuti unit kerja',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Penanganan Benturan Kepentingan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Eg9q53EUgqNNp6P3sQR-CnsBPNnV-wMMN6u6fdtJyEVRmg?e=Yr3H6E',
             ],
 
 
@@ -645,6 +713,7 @@ d. Terdapat penetapan Standar Pelayanan terhadap sebagian jenis pelayanan, namun
 e. Standar Pelayanan belum ditetapkan',
                 'pilihan_jawaban' => 'A/B/C/D/E',
                 'category' => 'Standar Pelayanan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Eud_WjFhPEFFi4IaI37eZ3kB5m43ILVQXdP9iFJSMBfNnw?e=bOyXjN',
             ],
             [
                 'penilaian' => 'b. Standar pelayanan telah dimaklumatkan',
@@ -654,6 +723,7 @@ c. Standar pelayanan telah dimaklumatkan pada sebagian kecil  jenis pelayanan da
 d. Standar pelayanan belum dimaklumatkan pada seluruh jenis pelayanan dan belum dipublikasikan',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Standar Pelayanan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EkudnhrboHJEomTDEugQVkgBLNixSKBl8yhXm2ypPCLd1Q?e=eINkrE',
             ],
             [
                 'penilaian' => 'c. Dilakukan reviu dan perbaikan atas standar pelayanan',
@@ -663,12 +733,14 @@ c. Dilakukan reviu dan perbaikan atas standar pelayanan, namun  dilakukan tanpa 
 d. Belum dilakukan reviu dan perbaikan atas standar pelayanan',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Standar Pelayanan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Et4ahRKGp7dBm1M9JggpKPwB-_tG2BtyPWgJ9U_SFR8Emg?e=V2vFZV',
             ],
             [
                 'penilaian' => 'd.	telah melakukan publikasi atas standar pelayanan dan maklumat pelayanan',
                 'kriteria_nilai' => 'Ya,telah melakukan publikasi atas tandar pelayanan dan maklumat pelayanan',
                 'pilihan_jawaban' => 'Ya/Tidak',
                 'category' => 'Standar Pelayanan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EpNxjyp4vEVIuCYQHnwQKgYBsKuwYbOx8TFwMwtH8ACxtQ?e=r50dGR',
             ],
 
             // ii. Budaya Pelayanan Prima
@@ -681,6 +753,7 @@ d. Telah dilakukan pelatihan/sosialisasi pelayanan prima namun secara terbatas, 
 e. Belum dilakukan pelatihan/sosialisasi pelayanan prima, dan seluruh petugas/pelaksana layanan belum memiliki kompetensi sesuai kebutuhan jenis layanan',
                 'pilihan_jawaban' => 'A/B/C/D/E',
                 'category' => 'Budaya Pelayanan Prima',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Et7481xd36lEl5sCa0r8FuMB3bs2Raa_fghprVWwRVdjGQ?e=4EneTM',
             ],
             [
                 'penilaian' => 'b.	Informasi tentang pelayanan mudah diakses melalui berbagai media',
@@ -690,6 +763,7 @@ c. Seluruh Informasi tentang pelayanan belum online, hanya dapat diakses di temp
 d. Informasi tentang pelayanan sulit diakses',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Budaya Pelayanan Prima',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EnQiO8ih8xBEjo0wZD8DbQQBfW00wxBRltVBOW94uOd4Mg?e=QfmWha',
             ],
             [
                 'penilaian' => 'c.	Telah terdapat sistem pemberian penghargaan dan sanksi bagi petugas pemberi pelayanan',
@@ -699,6 +773,7 @@ c. Telah terdapat kebijakan pemberian penghargaan dan sanksi, namun belum memenu
 d. Belum terdapat kebijakan pemberian penghargaan dan sanksi',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Budaya Pelayanan Prima',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Ehj8z7jrV6lCnfNiSblGZLoBtda8-bpxFuEYdHD3XRs-Kg?e=Zc56gz',
             ],
             [
                 'penilaian' => 'd.	Telah terdapat sistem pemberian kompensasi kepada penerima layanan bila layanan tidak sesuai standar',
@@ -708,6 +783,7 @@ c. Telah terdapat sistem pemberian kompensasi bila layanan tidak sesuai standar 
 d. Belum terdapat sistem pemberian kompensasi bila layanan tidak sesuai standar',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Budaya Pelayanan Prima',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/El1-8aVhpjtGqjWDf-IP9tgB2fP4wJ8SCJ-XShHYgiFUcg?e=WCO3E9',
             ],
             [
                 'penilaian' => 'e.	Terdapat sarana layanan terpadu/terintegrasi',
@@ -717,6 +793,7 @@ c. Jika sebagian kecil pelayanan sudah dilakukan secara terpadu/terintegrasi
 d. Jika tidak ada pelayanan yang dilakukan secara terpadu/terintegrasi',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Budaya Pelayanan Prima',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EsVDfPjE3GlLozfRfsvx0HcBaWs_9wWmeTwEAAMZ5JUh0A?e=2wmfiX',
             ],
             [
                 'penilaian' => 'f.	Terdapat inovasi pelayanan',
@@ -727,6 +804,7 @@ d. Jika unit kerja telah memiliki inovasi akan tetapi merupakan pelaksanaan inov
 e. Jika  unit kerja belum memiliki inovasi pelayanan',
                 'pilihan_jawaban' => 'A/B/C/D/E',
                 'category' => 'Budaya Pelayanan Prima',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EtDCxXkleAtFgIqDf-HYi9QB2HCZfgR_qjFmUzFlX4kwAg?e=MZOOdb',
             ],
 
             // iii. Pengelolaan Pengaduan
@@ -739,6 +817,7 @@ d. Hanya terdapat media konsultasi dan pengaduan secara offline
 e. Tidak terdapat media konsultasi dan pengaduan',
                 'pilihan_jawaban' => 'A/B/C/D/E',
                 'category' => 'Pengelolaan Pengaduan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/El1eQbZ6LNFKjR_Xp9JDooABoyKtoyOGyKKu6Oi2fB1vRw?e=2E0utv',
             ],
             [
                 'penilaian' => 'b.	Terdapat unit yang mengelola pengaduan dan konsultasi pelayanan',
@@ -747,6 +826,7 @@ b. Terdapat SK pengelola SP4N-LAPOR! di level instansi dan/atau surat penugasan 
 c. Belum terdapat unit pengelola khusus untuk konsultasi dan pengaduan, serta belum terdapat SK pengelola SP4N-LAPOR! di level instansi dan/atau surat penugasan pengelola SP4N-LAPOR! di level unit kerja',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Pengelolaan Pengaduan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Epqc--Oi-2RBvoK9AEfL7XoB5DivNY7Vx4J3dmXau5OCSA?e=ud61JN',
             ],
             [
                 'penilaian' => 'c.	Telah dilakukan evaluasi atas penanganan keluhan/masukan dan konsultasi',
@@ -755,6 +835,7 @@ b. Evaluasi  atas penanganan keluhan/masukan dan konsultasi dilakukan  tidak ber
 c. Belum dilakukan evaluasi penanganan keluhan/masukan dan konsultasi',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Pengelolaan Pengaduan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EgXIPFZNmANElMtc-UT1dlYBIiQl31TILO2WzVmTGO1XYw?e=87i802',
             ],
 
             // iv. Penilaian Kepuasan terhadap Pelayanan
@@ -767,6 +848,7 @@ d. Survei kepuasan masyarakat terhadap pelayanan dilakukan minimal 1 kali dalam 
 e. Belum dilakukan survei kepuasan masyarakat terhadap pelayanan',
                 'pilihan_jawaban' => 'A/B/C/D/E',
                 'category' => 'Penilaian Kepuasan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EvR7jC417z5FvF1NdzshFLoBOuVHAUPmE22CBh7oFXEEjw?e=VMaKjn',
             ],
             [
                 'penilaian' => 'b.	Hasil survei kepuasan masyarakat dapat diakses secara terbuka',
@@ -775,6 +857,7 @@ b. Hasil survei kepuasan masyarakat hanya dapat diakses secara offline di tempat
 c. Hasil survei kepuasan masyarakat tidak dipublikasi',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Penilaian Kepuasan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Eguiyz_CoMdDrwWMORJvG_QB9PjwFsAZKomN_wiOvsWnOA?e=bUuImX',
             ],
             [
                 'penilaian' => 'c.	Dilakukan tindak lanjut atas hasil survei kepuasan masyarakat',
@@ -784,6 +867,7 @@ c. Jika dilakukan tindak lanjut atas sebagian kecil hasil survei kepuasan masyar
 d. Jika belum dilakukan tindak lanjut atas hasil survei kepuasan masyarakat',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Penilaian Kepuasan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EkiQ3E_tv_ZNjUgWZAUKfc0BmiJMzSFnaU1BKI6HbpNvQQ?e=2JWoOJ',
             ],
 
             // v. Pemanfaatan Teknologi Informasi
@@ -795,12 +879,14 @@ c. Terdapat pelayanan yang menggunakan teknologi informasi pada sebagian kecil p
 d. Terdapat pelayanan yang belum menggunakan teknologi informasi pada proses pemberian pelayanan',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Pemanfaatan Teknologi Informasi',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EhaXQttEfEBNrnwTtsjH4ikBSMPPklKX-5g0jCrXgcDSvA?e=UKhbYd',
             ],
             [
                 'penilaian' => 'b. Telah membangun database pelayanan yang terintegrasi',
                 'kriteria_nilai' => 'Ya, jika tela membangun database pelayanan yang terintegrasi',
                 'pilihan_jawaban' => 'Ya/Tidak',
                 'category' => 'Pemanfaatan Teknologi Informasi',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/ElvJprHLO1pIm-f4bFBvU2wByjxGZfW7pblP4HVnCOSYLA?e=EOylZA',
             ],
             [
                 'penilaian' => 'c. Telah dilakukan perbaikan secara terus menerus',
@@ -809,6 +895,7 @@ b. Perbaikan dilakukan tidak secara terus menerus
 c. Belum dilakukan perbaikan ',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Pemanfaatan Teknologi Informasi',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Eg0YiguvRdJDp95qlfEyfzYBjrQFSaYMVR43H2MvAuEn7A?e=8f4Rmw',
             ],
 
 
@@ -823,6 +910,7 @@ c. Belum dilakukan perbaikan ',
                 'kriteria_nilai' => 'Misalkan dengan kebijakan 1 Agen 1 Perubahan. Persentase diperoleh dari Jumlah Perubahan yang dibuat dibagi dengan Jumlah Agen Perubahan.',
                 'pilihan_jawaban' => '%',
                 'category' => 'Komitmen dalam Perubahan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EhDKscfgjERJinkAJ5oV-Q0B27c67mYUZLtV3JJ3F1XxgA?e=b6WpPk',
             ],
             [
                 'penilaian' => '- Jumlah Agen Perubahan',
@@ -841,6 +929,7 @@ c. Belum dilakukan perbaikan ',
                 'kriteria_nilai' => '',
                 'pilihan_jawaban' => '%',
                 'category' => 'Komitmen dalam Perubahan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Et2ir4skZHdJmfNsL603UaEBf4TKahs0F7dmKtbEIUjlMA?e=w6PKp3',
             ],
             [
                 'penilaian' => '- Jumlah Perubahan yang dibuat Agen Perubahan',
@@ -867,6 +956,7 @@ d. Target capaian zona integritassudah ada di dokumen perencanaan unit kerja, na
 e. Tidak ada target capaian zona integritasdi dokumen perencanaan unit kerja',
                 'pilihan_jawaban' => 'A/B/C/D/E',
                 'category' => 'Komitmen Pimpinan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/ElQEd9qN7cFDtk-hB27qBD8BZ7ME4fK7loxJB8W5eARFDw?e=OhrS9m',
             ],
 
 
@@ -881,6 +971,7 @@ c. Budaya kerja dan nilai-nilai organisasi telah disusun, namun belum dinternali
 d. Belum menyusun budaya kerja dan nilai-nilai organisasi',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Membangun Budaya Kerja',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Ek_iYwvmMAZMgqlVBKgRHIgBVid-mk4eQlGRgIPeXhdEfw?e=ghbgV1',
             ],
 
 
@@ -897,6 +988,7 @@ c. Peta proses bisnis telah disusun dan mempengaruhi penyederhanaan sebagian kec
 d. Peta proses bisnis telah disusun dan belum mempengaruhi penyederhanaan jabatan',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Peta Proses Bisnis Mempengaruhi Penyederhanaan Jabatan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Ej-dvLezZDpNo8T8CdP9n6gBw3MsOJIwoSvqhWXlKMH5Mg?e=qmmEGE',
             ],
 
 
@@ -910,6 +1002,7 @@ b. Implementasi SPBE telah mampu mendorong pelaksanaan pelayanan publik yang leb
 c. Implementasi SPBE belum mendorong pelaksanaan pelayanan publik yang lebih cepat dan efisien',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Sistem Pemerintahan Berbasis Elektronik (SPBE) yang Terintegrasi',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EpwkNUjgkRtBsm6_v8P3ZIMBsR4QSNb3nXAZqzpUbrDv8g?e=5bCaKN',
             ],
             [
                 'penilaian' => 'b. Implementasi SPBE telah terintegrasi dan mampu mendorong pelaksanaan pelayanan internal organisasi yang lebih cepat dan efisien',
@@ -918,6 +1011,7 @@ b. Implementasi SPBE telah mampu mendorong pelaksanaan pelayanan internal unit k
 c. Implementasi SPBE belum mendorong pelaksanaan pelayanan internal unit kerja yang lebih cepat dan efisien',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Sistem Pemerintahan Berbasis Elektronik (SPBE) yang Terintegrasi',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EmRGB1xhgtlDvBkj97W66MUBzSRaAf66Nu5klli08dQl_Q?e=fKm4UF',
             ],
 
 
@@ -932,6 +1026,7 @@ d. Kriteria huruf e telah terpenuhi dan kapabilitas prakiraan dan pelacakan terh
 e. Sasaran dan target manfaat/dampak dari transformasi digital pada bidang proses bisnis utama telah direncanakan, didefinisikan, dan ditetapkan',
                 'pilihan_jawaban' => 'A/B/C/D/E',
                 'category' => 'Transformasi Digital Memberikan Nilai Manfaat',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Er0fSRF0r1VMolAruphHgBMBf9PpR-Wtzk8tOFH7s9BdDQ?e=jKJuPA',
             ],
 
             [
@@ -943,6 +1038,7 @@ d. Kriteria huruf e telah terpenuhi dan kapabilitas prakiraan dan pelacakan terh
 e. Sasaran dan target manfaat/dampak dari transformasi digital pada bidang administrasi pemerintahan telah direncanakan, didefinisikan, dan ditetapkan',
                 'pilihan_jawaban' => 'A/B/C/D/E',
                 'category' => 'Transformasi Digital Memberikan Nilai Manfaat',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EmwLDyUJ-K9PrskTrhyMIjUBAZI0OYhsJWR1cwVyuxCAWg?e=s3gvEW',
             ],
 
             [
@@ -954,6 +1050,7 @@ d. Kriteria huruf e telah terpenuhi dan kapabilitas prakiraan dan pelacakan terh
 e. Sasaran dan target manfaat/dampak dari transformasi digital pada bidang pelayanan publik telah direncanakan, didefinisikan, dan ditetapkan',
                 'pilihan_jawaban' => 'A/B/C/D/E',
                 'category' => 'Transformasi Digital Memberikan Nilai Manfaat',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EquQU3fxTP5GgeJGJQWt5lMBq3hBfWMI8Y5GpuTG7GENAg?e=hszuHj',
             ],
             
 
@@ -969,6 +1066,7 @@ b. Sebagian ukuran kinerja individu telah berorientasi hasil (outcome) sesuai pa
 c. Tidak ada ukuran kinerja individu yang berorientasi hasil (outcome)',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Kinerja Individu',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/En2oPzPB_0lHoEe05BmAUP4By1BiDj3KXlvWuDwwvWuWCw?e=RwRgcX',
             ],
 
 
@@ -981,6 +1079,7 @@ b. Hasil assessment belum seluruhnya dijadikan mutasi internal dan pengembangan 
 c. Hasil assessment belum dijadikan dasar mutasi internal dan pengembangan kompetensi pegawai',
                 'pilihan_jawaban' => 'A/B/C',
                 'category' => 'Assessment Pegawai',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/ErHU0eFUyUNLpfzUWHNPFhcBw46cCtKVGpYVsVIf2BYK7A?e=TUuHYZ',
             ],
 
             
@@ -992,6 +1091,7 @@ c. Hasil assessment belum dijadikan dasar mutasi internal dan pengembangan kompe
                 'kriteria_nilai' => 'Persentase pernurunan pelanggaran disiplin pegawai diperoleh dari Jumlah pelanggaran tahun sebelumnya dikurangi Jumlah pelanggaran tahun ini kemudian dibagi dengan Jumlah pelanggaran tahun sebelumnya',
                 'pilihan_jawaban' => '%',
                 'category' => 'Pelanggaran Disiplin Pegawai',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EiHxK6a7py9CszXscDUdSEkBTX81RmuWnY2GY1rcuIZ8QQ?e=pfOJ1S',
             ],
             [
                 'penilaian' => '- Jumlah pelanggaran tahun sebelumnya',
@@ -1022,6 +1122,7 @@ c. Hasil assessment belum dijadikan dasar mutasi internal dan pengembangan kompe
                 'kriteria_nilai' => 'Persentase diperoleh dari Jumlah Sasaran Kinerja yang tercapai 100% atau lebih dibagi dengan Jumlah Sasaran Kinerja',
                 'pilihan_jawaban' => '%',
                 'category' => 'Meningkatnya Capaian Kinerja Unit Kerja',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EhpwtjUJZZlPisKK2ZfKJFMB7mavvrvuaSycaod9F1-w3A?e=17dleE',
             ],
             [
                 'penilaian' => '- Jumlah Sasaran Kinerja',
@@ -1045,6 +1146,7 @@ c. Sebagian kecil Capaian Kinerja (kurang dari 50% Perjanjian kinerja) merupakan
 d. Capaian Kinerja (Perjanjian kinerja) belum menjadi unsur dalam pemberian reward and punishment',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Pemberian Reward and Punishment',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EqNJgdvIL6BPolBQgRhgVQcBL8TOU-nI7omqhjtq8_H2Ew?e=cK6pQy',
             ],
 
             // iii. Kerangka Logis Kinerja
@@ -1056,6 +1158,7 @@ c. Kerangka Logis kinerja ada namun belum mengacu pada kinerja utama organisasi 
 d. Kerangka Logis kinerja belum ada',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Kerangka Logis Kinerja',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EmA0K7wGhVxKkoX8pZLx8lkBB6eVmUr82l8PhAMNNPZHRw?e=zTfbZm',
             ],
 
 
@@ -1073,6 +1176,7 @@ d. Terdapat pengendalian aktivitas utama organisasi tetapi tidak tersistem
 e. Tidak terdapat pengendalian atas aktivitas utama organisasi',
                 'pilihan_jawaban' => 'A/B/C/D/E',
                 'category' => 'Mekanisme Pengendalian',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EsyjJyiLjTBKuiLUmZl2VSABVnNxwfQ8xwhxM4A_xGTwIg?e=m51uGn',
             ],
 
             // ii. Penanganan Pengaduan Masyarakat
@@ -1081,6 +1185,7 @@ e. Tidak terdapat pengendalian atas aktivitas utama organisasi',
                 'kriteria_nilai' => 'Penilaian ini menghitung realisasi penanganan pengaduan masyarakat yang harus diselesaikan',
                 'pilihan_jawaban' => '%',
                 'category' => 'Penanganan Pengaduan Masyarakat',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EjdkeU9bbGZHlUDLimRfzigBuSQXcq3sPV2qHA6SaOFFLA?e=jDs1lg',
             ],
             [
                 'penilaian' => '- Jumlah pengaduan masyarakat yang harus ditindaklanjuti',
@@ -1116,6 +1221,7 @@ e. Tidak terdapat pengendalian atas aktivitas utama organisasi',
 7. SE Menteri PANRB No. 2 Tahun 2023',
                 'pilihan_jawaban' => '%',
                 'category' => 'Penyampaian Laporan Harta Kekayaan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Eu0qLaDMte5Dns4dLrz7zyUBuzgkBgysSxD-oXT0k54XBg?e=klSkUX',
             ],
 
             [
@@ -1165,6 +1271,7 @@ e. Tidak terdapat pengendalian atas aktivitas utama organisasi',
 7. SE Menteri PANRB No. 2 Tahun 2023',
                 'pilihan_jawaban' => '%',
                 'category' => 'Penyampaian Laporan Harta Kekayaan',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EuLWc9rHwGZGp2V5Jb8fL28BJ2cs2j2dWhj-X7bAMYA2TA?e=HkEUNl',
             ],
             [
                 'penilaian' => '- Jumlah yang harus melaporkan (tidak wajib LHKPN)',
@@ -1211,6 +1318,7 @@ c. Upaya dan/atau inovasi yang dilakukan belum sesuai kebutuhan
 d. Belum ada inovasi.',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Peningkatan Kualitas Pelayanan Publik - Criteria',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EqUtJQ8UKFBGneNBs6yRW9cB6dCMG6B12LKpAshwnzYSJA?e=E9IF5a',
             ],
             [
                 'penilaian' => 'Upaya dan/atau inovasi pada perijinan/pelayanan telah dipermudah',
@@ -1221,6 +1329,7 @@ d. Belum ada inovasi.',
 4 Terintegrasi dengan aplikasi',
                 'pilihan_jawaban' => '%',
                 'category' => 'Peningkatan Kualitas Pelayanan Publik - Reform',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/EhucI8qojC5Ol5e3SSCquiABb6Z_F-Whk78RTAIRF_lgZQ?e=W7csst',
             ],
             [
                 'penilaian' => '- Jumlah perijinan/pelayanan yang terdata/terdaftar',
@@ -1248,6 +1357,7 @@ c. Pengaduan pelayanan dan konsultasi direspon lambat melalui berbagai kanal/med
 d. Pengaduan pelayanan dan konsultasi direspon lambat dan kanal/media terbatas',
                 'pilihan_jawaban' => 'A/B/C/D',
                 'category' => 'Penanganan Pengaduan Pelayanan dan Konsultasi',
+                'url_bukti_dukung' => 'https://1drv.ms/f/c/e6af1d259716302b/Egiglv6DbilDrUt1wvlMX1YBrbJ3jlf1YyYBjjdLwzB7Hw?e=5LbSss',
             ],
             
 

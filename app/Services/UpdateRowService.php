@@ -17,6 +17,10 @@ class UpdateRowService
                 ? (float) $value
                 : $value;
 
+                
+            // Update the 'last_updated_by' column with the current user's name
+            $criterion->last_updated_by = auth()->user()->name;
+
             // Save the new value immediately to ensure calculations use the latest data
             $criterion->save();
 

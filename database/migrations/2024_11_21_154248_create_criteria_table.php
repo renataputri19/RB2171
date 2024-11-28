@@ -24,6 +24,7 @@ return new class extends Migration {
             $table->decimal('nilai_tpi', 5, 2)->nullable(); // Dynamic
             $table->text('catatan_reviu_tpi')->nullable(); // Dynamic
             $table->string('category'); // Category for filtering
+            $table->string('last_updated_by')->nullable(); // Category for filtering
             $table->timestamps();
         });
     }
