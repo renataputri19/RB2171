@@ -25,9 +25,9 @@ Route::get('/', function () {
 // Dashboard Route
 Route::get('/dashboard', function () {
     if (Auth::check()) {
-        return view('dashboard'); // Replace 'dashboard' with your dashboard view
+        return view('admin/nilai'); // Replace 'dashboard' with your dashboard view
     } else {
-        return redirect('/admin/nilai');
+        return redirect('/admin/login');
     }
 });
 
@@ -62,3 +62,13 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
+// Fallback route for undefined URLs
+Route::fallback(function () {
+    if (Auth::check()) {
+        // If the user is logged in, redirect to the dashboard
+        return redirect('/admin/nilai');
+    } else {
+        // If the user is not logged in, redirect to the login page
+        return redirect('/admin/login');
+    }
+});
