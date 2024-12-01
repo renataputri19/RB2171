@@ -22,11 +22,13 @@ Route::get('/', function () {
     return view('homepage');
 });
 
-// Dashboard Route
+// Dashboard Route (Redirect to Filament)
 Route::get('/dashboard', function () {
     if (Auth::check()) {
-        return view('admin/nilai'); // Replace 'dashboard' with your dashboard view
+        // Redirect to Filament's Admin Dashboard
+        return redirect('/admin'); // Correct Filament dashboard route
     } else {
+        // Redirect to Filament's Login Page
         return redirect('/admin/login');
     }
 });
@@ -62,13 +64,13 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-// Fallback route for undefined URLs
+// Fallback Route for Undefined URLs
 Route::fallback(function () {
     if (Auth::check()) {
-        // If the user is logged in, redirect to the dashboard
-        return redirect('/admin/nilai');
+        // Redirect to Filament's Admin Dashboard
+        return redirect('/admin');
     } else {
-        // If the user is not logged in, redirect to the login page
+        // Redirect to Filament's Login Page
         return redirect('/admin/login');
     }
 });
